@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Def Profile Pop-->
+        <scene sceneID="PZ1-RV-kXT">
+            <objects>
+                <viewController storyboardIdentifier="DefProfilePop" id="GNp-f4-d4p" customClass="DefProfilePop" customModule="random2u" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iOS-2y-EGX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="350"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="기본이미지 선택" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2oC-Is-v3P">
+                                <rect key="frame" x="13" y="20" width="173" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="173" id="LQm-FT-DbA"/>
+                                    <constraint firstAttribute="height" constant="20" id="nug-o2-scJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Syz-oE-jGv">
+                                <rect key="frame" x="0.0" y="60" width="320" height="230"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="230" id="c4v-xP-vKn"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="uga-UQ-dTa">
+                                    <size key="itemSize" width="129" height="124"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="u3K-pb-eH8">
+                                        <rect key="frame" x="0.0" y="0.0" width="129" height="124"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="QZG-Ya-yBi">
+                                            <rect key="frame" x="0.0" y="0.0" width="129" height="124"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="129" height="124"/>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5nz-xK-ESO">
+                                <rect key="frame" x="0.0" y="301" width="320" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="QK0-Xu-51I"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="닫기">
+                                    <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="onAccBtn:" destination="GNp-f4-d4p" eventType="touchUpInside" id="nfu-YW-lBL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ebv-wD-ZwM"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Syz-oE-jGv" firstAttribute="top" secondItem="2oC-Is-v3P" secondAttribute="bottom" constant="20" id="7Rd-SL-LDF"/>
+                            <constraint firstItem="5nz-xK-ESO" firstAttribute="trailing" secondItem="ebv-wD-ZwM" secondAttribute="trailing" id="Fwm-rF-pG1"/>
+                            <constraint firstItem="5nz-xK-ESO" firstAttribute="top" secondItem="Syz-oE-jGv" secondAttribute="bottom" constant="11" id="If4-1y-UFl"/>
+                            <constraint firstItem="ebv-wD-ZwM" firstAttribute="trailing" secondItem="Syz-oE-jGv" secondAttribute="trailing" id="NXw-9Z-cqy"/>
+                            <constraint firstItem="2oC-Is-v3P" firstAttribute="top" secondItem="ebv-wD-ZwM" secondAttribute="top" constant="20" id="NZy-Y0-pb7"/>
+                            <constraint firstItem="Syz-oE-jGv" firstAttribute="leading" secondItem="ebv-wD-ZwM" secondAttribute="leading" id="ZZw-sT-pF9"/>
+                            <constraint firstItem="2oC-Is-v3P" firstAttribute="leading" secondItem="ebv-wD-ZwM" secondAttribute="leading" constant="13" id="gXe-KF-UwE"/>
+                            <constraint firstItem="5nz-xK-ESO" firstAttribute="leading" secondItem="ebv-wD-ZwM" secondAttribute="leading" id="m34-P7-n9r"/>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="320" height="350"/>
+                    <connections>
+                        <outlet property="uiAccBtn" destination="5nz-xK-ESO" id="i51-h5-cYk"/>
+                        <outlet property="uiCollectionView" destination="Syz-oE-jGv" id="BS5-LM-SJ9"/>
+                        <outlet property="uiTitlelb" destination="2oC-Is-v3P" id="w25-HE-jm6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yeS-fT-gBL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-73.599999999999994" y="139.880059970015"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

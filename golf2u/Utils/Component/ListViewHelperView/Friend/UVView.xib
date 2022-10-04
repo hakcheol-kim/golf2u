@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UVView" customModule="random2u" customModuleProvider="target">
+            <connections>
+                <outlet property="uiAccBtn" destination="Qfm-6f-K5j" id="tGy-YY-Pnm"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="262"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sjt-K1-ovC">
+                    <rect key="frame" x="65.5" y="20" width="244" height="222"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qfm-6f-K5j">
+                            <rect key="frame" x="66" y="182" width="120" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="aCL-xr-5IL"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <state key="normal" title="본인 인증하기">
+                                <color key="titleColor" red="0.91372549020000005" green="0.30588235289999999" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="onAccBtgn:" destination="-1" eventType="touchUpInside" id="qtx-iM-wN2"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="leK-AH-XOt">
+                            <rect key="frame" x="0.0" y="136" width="244" height="38"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="38" id="9yv-Uo-jpq"/>
+                            </constraints>
+                            <string key="text">친구관리는 본인인증이 필요한 서비스입니다.
+본인인증 후 다시 시도해주세요.</string>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="friend_Panda.png" translatesAutoresizingMaskIntoConstraints="NO" id="w2I-UI-1Sa">
+                            <rect key="frame" x="2" y="0.0" width="240" height="128"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="128" id="H4x-pj-b4R"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Qfm-6f-K5j" firstAttribute="top" secondItem="leK-AH-XOt" secondAttribute="bottom" constant="8" symbolic="YES" id="AfP-DW-UhT"/>
+                        <constraint firstItem="Qfm-6f-K5j" firstAttribute="leading" secondItem="sjt-K1-ovC" secondAttribute="leading" constant="66" id="Bme-ek-lem"/>
+                        <constraint firstItem="leK-AH-XOt" firstAttribute="top" secondItem="w2I-UI-1Sa" secondAttribute="bottom" constant="8" symbolic="YES" id="JcS-KZ-0yE"/>
+                        <constraint firstAttribute="trailing" secondItem="leK-AH-XOt" secondAttribute="trailing" id="MTJ-cR-E70"/>
+                        <constraint firstItem="leK-AH-XOt" firstAttribute="leading" secondItem="sjt-K1-ovC" secondAttribute="leading" id="f7c-Ck-Way"/>
+                        <constraint firstAttribute="trailing" secondItem="w2I-UI-1Sa" secondAttribute="trailing" constant="2" id="fb1-BE-AeE"/>
+                        <constraint firstItem="w2I-UI-1Sa" firstAttribute="top" secondItem="sjt-K1-ovC" secondAttribute="top" id="jSE-AQ-wo4"/>
+                        <constraint firstItem="w2I-UI-1Sa" firstAttribute="leading" secondItem="sjt-K1-ovC" secondAttribute="leading" constant="2" id="qc9-Qj-HKc"/>
+                        <constraint firstAttribute="trailing" secondItem="Qfm-6f-K5j" secondAttribute="trailing" constant="58" id="wYZ-5W-lUu"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="sjt-K1-ovC" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="GpJ-Ft-q9Y"/>
+                <constraint firstItem="sjt-K1-ovC" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="65.5" id="HdI-HL-4cJ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="sjt-K1-ovC" secondAttribute="bottom" constant="20" id="Lkm-bG-15G"/>
+                <constraint firstItem="sjt-K1-ovC" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="MVl-Bc-6zx"/>
+                <constraint firstItem="sjt-K1-ovC" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="cwk-kR-RcQ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="sjt-K1-ovC" secondAttribute="trailing" constant="65.5" id="rOT-2A-LV2"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-15.199999999999999" y="26.986506746626688"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="friend_Panda.png" width="330" height="284"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

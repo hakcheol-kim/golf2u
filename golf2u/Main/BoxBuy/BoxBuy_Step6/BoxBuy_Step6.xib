@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="BoxBuy_Step6idx" id="gTV-IL-0wX" customClass="BoxBuy_Step6" customModule="random2u" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="171"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="171"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Crw-9U-oy6">
+                        <rect key="frame" x="13" y="48" width="349" height="119"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="119" id="tUW-s1-GC0"/>
+                        </constraints>
+                        <string key="text">상호명 : ㈜네모난오렌지 사업장소재지 : 서울시 강남구 남부순환로 2722 3층 (도곡동) 사업자등록번호 : 484-87-00475 대표이사 : 안혜미
+통신판매업신고: 2017-서울강남-02348 고객센터 : customer@random2u.com 대표번호 1588-2529
+</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AbS-jn-uAk">
+                        <rect key="frame" x="13" y="10" width="349" height="33"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="기업정보" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mzg-r9-Hh9">
+                                <rect key="frame" x="8" y="9" width="82" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="1jA-Fy-LNK"/>
+                                    <constraint firstAttribute="width" constant="82" id="sah-AX-HMf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Frg-uW-3aX">
+                                <rect key="frame" x="324" y="7" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="kJB-Ns-WdT"/>
+                                    <constraint firstAttribute="width" constant="20" id="lvz-7J-9TD"/>
+                                </constraints>
+                                <state key="normal" image="boxbuy_arrow_up.png"/>
+                                <connections>
+                                    <action selector="onSlider:" destination="gTV-IL-0wX" eventType="touchUpInside" id="ALh-zO-gMc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Frg-uW-3aX" secondAttribute="trailing" constant="5" id="Od9-OB-fJ4"/>
+                            <constraint firstItem="Frg-uW-3aX" firstAttribute="top" secondItem="AbS-jn-uAk" secondAttribute="top" constant="7" id="b84-fk-n3h"/>
+                            <constraint firstItem="mzg-r9-Hh9" firstAttribute="leading" secondItem="AbS-jn-uAk" secondAttribute="leading" constant="8" id="gsG-l3-itI"/>
+                            <constraint firstAttribute="height" constant="33" id="p3x-nc-EMM"/>
+                            <constraint firstItem="mzg-r9-Hh9" firstAttribute="top" secondItem="AbS-jn-uAk" secondAttribute="top" constant="9" id="rk6-Fu-y8h"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="AbS-jn-uAk" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="13" id="GWm-OS-11n"/>
+                <constraint firstItem="Crw-9U-oy6" firstAttribute="top" secondItem="AbS-jn-uAk" secondAttribute="bottom" constant="5" id="KFO-9E-0a5"/>
+                <constraint firstAttribute="trailing" secondItem="AbS-jn-uAk" secondAttribute="trailing" constant="13" id="UAM-od-uh8"/>
+                <constraint firstItem="Crw-9U-oy6" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="13" id="cqk-1A-JbD"/>
+                <constraint firstAttribute="trailing" secondItem="Crw-9U-oy6" secondAttribute="trailing" constant="13" id="jCg-N2-4j9"/>
+                <constraint firstItem="AbS-jn-uAk" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="wPB-V8-tWA"/>
+            </constraints>
+            <size key="customSize" width="375" height="172"/>
+            <connections>
+                <outlet property="uiSilderBtn" destination="Frg-uW-3aX" id="L75-gj-6S6"/>
+                <outlet property="uiTabView" destination="AbS-jn-uAk" id="TAZ-Nn-0Ga"/>
+                <outlet property="uilb1" destination="mzg-r9-Hh9" id="gDa-CC-lp7"/>
+                <outlet property="uilb2" destination="Crw-9U-oy6" id="b6u-ZG-1MQ"/>
+            </connections>
+            <point key="canvasLocation" x="136.95652173913044" y="84.709821428571431"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="boxbuy_arrow_up.png" width="70" height="70"/>
+    </resources>
+</document>

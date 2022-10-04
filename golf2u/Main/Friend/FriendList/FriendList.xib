@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FriendList" customModule="golf2u" customModuleProvider="target">
+            <connections>
+                <outlet property="uiCollectionView" destination="IBA-BB-9aj" id="P16-FX-RfO"/>
+                <outlet property="uiFriendCntLabel" destination="E0u-uU-LEm" id="QMM-W0-Hdy"/>
+                <outlet property="uiTopView" destination="DWc-yf-TnL" id="lCY-LP-t0G"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DWc-yf-TnL">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="친구 0명" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E0u-uU-LEm">
+                            <rect key="frame" x="13" y="13" width="150" height="15"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="150" id="0F6-LE-QIt"/>
+                                <constraint firstAttribute="height" constant="15" id="S1N-xL-LV9"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eQv-aB-mTE">
+                            <rect key="frame" x="298" y="8" width="64" height="26"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mJg-wp-NrU">
+                                    <rect key="frame" x="11" y="5" width="15" height="15"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" image="findsearchbtn.png"/>
+                                    <connections>
+                                        <action selector="onMainListSearchBtn:" destination="-1" eventType="touchUpInside" id="lgG-6c-MfR"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fPm-5C-uys">
+                                    <rect key="frame" x="36" y="2" width="25" height="20"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" image="friend_menu.png"/>
+                                    <connections>
+                                        <action selector="onBlackBtn:" destination="-1" eventType="touchUpInside" id="Ax1-c1-Mu7"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="26" id="pS9-Ww-DxS"/>
+                                <constraint firstAttribute="width" constant="54" id="v1n-nJ-gkb"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="88O-fy-iwS"/>
+                        <constraint firstAttribute="trailing" secondItem="eQv-aB-mTE" secondAttribute="trailing" constant="18" id="Xt8-BA-5VP"/>
+                        <constraint firstItem="E0u-uU-LEm" firstAttribute="leading" secondItem="DWc-yf-TnL" secondAttribute="leading" constant="13" id="e91-s6-8b1"/>
+                        <constraint firstItem="eQv-aB-mTE" firstAttribute="top" secondItem="DWc-yf-TnL" secondAttribute="top" constant="8" id="hdY-Uo-6vQ"/>
+                        <constraint firstItem="E0u-uU-LEm" firstAttribute="top" secondItem="DWc-yf-TnL" secondAttribute="top" constant="13" id="zkD-iy-hLp"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="IBA-BB-9aj">
+                    <rect key="frame" x="0.0" y="42" width="375" height="625"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="R6f-im-ECZ">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="DWc-yf-TnL" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="5TJ-xd-lYT"/>
+                <constraint firstItem="IBA-BB-9aj" firstAttribute="top" secondItem="DWc-yf-TnL" secondAttribute="bottom" constant="2" id="Iw9-zZ-z77"/>
+                <constraint firstItem="IBA-BB-9aj" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="OTv-Tr-NpV"/>
+                <constraint firstItem="IBA-BB-9aj" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="jje-ux-cwr"/>
+                <constraint firstItem="DWc-yf-TnL" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="odo-Da-5e1"/>
+                <constraint firstItem="DWc-yf-TnL" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="qg9-qw-o5h"/>
+                <constraint firstItem="IBA-BB-9aj" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="sb4-Yj-2Jz"/>
+            </constraints>
+            <point key="canvasLocation" x="140" y="99.400299850074973"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="findsearchbtn.png" width="67" height="68"/>
+        <image name="friend_menu.png" width="69" height="69"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

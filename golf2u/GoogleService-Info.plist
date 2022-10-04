@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>395419637423-procagjnf0ls9ft7g9339j4g27344uel.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.395419637423-procagjnf0ls9ft7g9339j4g27344uel</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>395419637423-ef7pgbvmbsvfoovdafulkg1v8s7ro72o.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAb8GYUj7ntE5vvTPvd3K_KYZiNwezg-HI</string>
+	<key>GCM_SENDER_ID</key>
+	<string>395419637423</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.golf2u.app.ios</string>
+	<key>PROJECT_ID</key>
+	<string>golf2u-6af3f</string>
+	<key>STORAGE_BUCKET</key>
+	<string>golf2u-6af3f.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:395419637423:ios:20797bfafa005a96f2265a</string>
+</dict>
+</plist>

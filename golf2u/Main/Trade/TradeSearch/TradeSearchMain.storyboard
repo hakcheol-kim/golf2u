@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--트레이드 검색-->
+        <scene sceneID="RMC-ve-ukB">
+            <objects>
+                <viewController storyboardIdentifier="tradesearchmainidx" hidesBottomBarWhenPushed="YES" id="hbS-5N-aBz" customClass="TradeSearchMain" customModule="golf2u" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0NY-HD-D8R">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="piY-qY-tvq" customClass="ReportCustomSegmentedControl" customModule="golf2u" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="375" height="40"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="clh-vp-eZs"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I1f-Xl-2eP">
+                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.72941176470000002" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="zPy-S4-tcY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="검색하기">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="onSearchBtn:" destination="hbS-5N-aBz" eventType="touchUpInside" id="bz2-dP-477"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F3r-ny-pBy">
+                                <rect key="frame" x="0.0" y="144" width="375" height="473"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JRy-84-7an">
+                                <rect key="frame" x="0.0" y="86" width="375" height="56"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="검색어를 입력해주세요." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JQF-yf-xD0">
+                                        <rect key="frame" x="13" y="11" width="349" height="34"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="sHB-bR-Nde"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="trade_findsearchbtn.png" translatesAutoresizingMaskIntoConstraints="NO" id="0ed-4A-a7c">
+                                        <rect key="frame" x="332" y="13" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="Q6V-Ed-4UQ"/>
+                                            <constraint firstAttribute="height" constant="30" id="Tdx-zQ-LCp"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.97254901959999995" green="0.97253733870000003" blue="0.97254973649999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="JQF-yf-xD0" firstAttribute="top" secondItem="JRy-84-7an" secondAttribute="top" constant="11" id="3eO-HR-Aba"/>
+                                    <constraint firstItem="JQF-yf-xD0" firstAttribute="leading" secondItem="JRy-84-7an" secondAttribute="leading" constant="13" id="Qno-a5-300"/>
+                                    <constraint firstAttribute="trailing" secondItem="0ed-4A-a7c" secondAttribute="trailing" constant="13" id="XtH-eN-jGo"/>
+                                    <constraint firstAttribute="height" constant="56" id="liW-AJ-y7z"/>
+                                    <constraint firstAttribute="trailing" secondItem="JQF-yf-xD0" secondAttribute="trailing" constant="13" id="oOQ-Pf-CFb"/>
+                                    <constraint firstItem="0ed-4A-a7c" firstAttribute="top" secondItem="JRy-84-7an" secondAttribute="top" constant="13" id="wpL-rw-sI4"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="lyA-vl-gBp"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="F3r-ny-pBy" firstAttribute="top" secondItem="JRy-84-7an" secondAttribute="bottom" constant="2" id="4Pi-bj-RKc"/>
+                            <constraint firstItem="piY-qY-tvq" firstAttribute="trailing" secondItem="lyA-vl-gBp" secondAttribute="trailing" id="6yP-w6-i5g"/>
+                            <constraint firstItem="I1f-Xl-2eP" firstAttribute="trailing" secondItem="lyA-vl-gBp" secondAttribute="trailing" id="AoY-Hi-XVK"/>
+                            <constraint firstItem="piY-qY-tvq" firstAttribute="top" secondItem="lyA-vl-gBp" secondAttribute="top" id="E5u-hc-ktH"/>
+                            <constraint firstItem="F3r-ny-pBy" firstAttribute="trailing" secondItem="lyA-vl-gBp" secondAttribute="trailing" id="K4g-GP-VcA"/>
+                            <constraint firstItem="I1f-Xl-2eP" firstAttribute="bottom" secondItem="lyA-vl-gBp" secondAttribute="bottom" id="O11-7R-ZaW"/>
+                            <constraint firstItem="F3r-ny-pBy" firstAttribute="leading" secondItem="lyA-vl-gBp" secondAttribute="leading" id="WOL-GS-XsY"/>
+                            <constraint firstItem="I1f-Xl-2eP" firstAttribute="top" secondItem="F3r-ny-pBy" secondAttribute="bottom" id="d6T-Om-P3N"/>
+                            <constraint firstItem="JRy-84-7an" firstAttribute="trailing" secondItem="lyA-vl-gBp" secondAttribute="trailing" id="lCc-D1-oh5"/>
+                            <constraint firstItem="piY-qY-tvq" firstAttribute="leading" secondItem="lyA-vl-gBp" secondAttribute="leading" id="oCp-R7-aMs"/>
+                            <constraint firstItem="I1f-Xl-2eP" firstAttribute="leading" secondItem="lyA-vl-gBp" secondAttribute="leading" id="rOn-Ia-DCz"/>
+                            <constraint firstItem="JRy-84-7an" firstAttribute="top" secondItem="piY-qY-tvq" secondAttribute="bottom" constant="2" id="v6V-1N-0sF"/>
+                            <constraint firstItem="JRy-84-7an" firstAttribute="leading" secondItem="lyA-vl-gBp" secondAttribute="leading" id="yhJ-yb-1eY"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="트레이드 검색" id="t60-1a-Ycw"/>
+                    <connections>
+                        <outlet property="uiContentsView" destination="F3r-ny-pBy" id="c8c-To-ozT"/>
+                        <outlet property="uiImgSearchBtn" destination="0ed-4A-a7c" id="lZB-De-RxB"/>
+                        <outlet property="uiKeyword" destination="JQF-yf-xD0" id="PaH-9t-VLM"/>
+                        <outlet property="uiSearchBtn" destination="I1f-Xl-2eP" id="3Sg-Hb-Pbs"/>
+                        <outlet property="uiTopTabView" destination="piY-qY-tvq" id="IEL-ER-9FM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="25E-gO-DoL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1173.5999999999999" y="154.27286356821591"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="UqY-u8-gIh">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="J07-Jv-jbc" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ywu-E3-YYw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="hbS-5N-aBz" kind="relationship" relationship="rootViewController" id="Y4I-yz-Efv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Igl-8y-Jfq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="234.40000000000001" y="154.27286356821591"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="trade_findsearchbtn.png" width="300" height="300"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

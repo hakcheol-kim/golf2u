@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="filtterpopcell" id="gTV-IL-0wX" customClass="FiltterPopupCell" customModule="golf2u" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="160" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="160" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J3z-qZ-doP">
+                        <rect key="frame" x="30" y="15" width="125" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="fsM-4a-aev"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cC0-ms-zIi" customClass="CircleCheckBoxBtn" customModule="golf2u" customModuleProvider="target">
+                        <rect key="frame" x="5" y="15" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="1eD-cR-76s"/>
+                            <constraint firstAttribute="width" constant="20" id="Un3-NR-oS7"/>
+                        </constraints>
+                        <color key="tintColor" red="0.0" green="0.72941176470000002" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <state key="normal" image="check_circle_blank.png">
+                            <color key="titleColor" red="0.0" green="0.72941176470000002" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="onCheckBtn:" destination="gTV-IL-0wX" eventType="touchUpInside" id="SQh-RB-eXE"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="cC0-ms-zIi" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="UY9-fB-ZuO"/>
+                <constraint firstItem="J3z-qZ-doP" firstAttribute="leading" secondItem="cC0-ms-zIi" secondAttribute="trailing" constant="5" id="c0v-tQ-yhv"/>
+                <constraint firstItem="cC0-ms-zIi" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="15" id="dTD-mA-aPo"/>
+                <constraint firstAttribute="trailing" secondItem="J3z-qZ-doP" secondAttribute="trailing" constant="5" id="rRM-WB-ohf"/>
+                <constraint firstItem="J3z-qZ-doP" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="15" id="vh7-rO-xha"/>
+            </constraints>
+            <size key="customSize" width="160" height="50"/>
+            <connections>
+                <outlet property="checkbtn" destination="cC0-ms-zIi" id="C3N-h1-q7q"/>
+                <outlet property="ctitle" destination="J3z-qZ-doP" id="pvf-2q-VOU"/>
+            </connections>
+            <point key="canvasLocation" x="220.28985507246378" y="97.767857142857139"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="check_circle_blank.png" width="60" height="60"/>
+    </resources>
+</document>

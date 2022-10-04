@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Gift Inven Code-->
+        <scene sceneID="wFD-M9-AKo">
+            <objects>
+                <viewController storyboardIdentifier="GiftInvenCodeidx" hidesBottomBarWhenPushed="YES" id="Uf7-Yf-E7L" customClass="GiftInvenCode" customModule="golf2u" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cMv-Uk-T51">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="선물코드를 입력하세요." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2ls-6A-9TU">
+                                <rect key="frame" x="13" y="70" width="349" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="73Q-hb-tE1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="받으신 선물코드를 상단 입력란에 입력해주세요. 선물받기가 완료되면 상품 or 박스 보관함에서 확인 가능합니다." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Msu-HP-DRl">
+                                <rect key="frame" x="13" y="140" width="349" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="k6Y-xd-IFh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7P8-UH-KtX">
+                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.72941176470000002" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="gJo-cp-rkB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="입력완료">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="onAccBtn:" destination="Uf7-Yf-E7L" eventType="touchUpInside" id="fnT-E6-MtV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="2JC-vZ-OIE"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2JC-vZ-OIE" firstAttribute="trailing" secondItem="2ls-6A-9TU" secondAttribute="trailing" constant="13" id="4QB-7W-cNd"/>
+                            <constraint firstItem="2ls-6A-9TU" firstAttribute="top" secondItem="2JC-vZ-OIE" secondAttribute="top" constant="26" id="9AJ-ht-9ng"/>
+                            <constraint firstItem="2ls-6A-9TU" firstAttribute="leading" secondItem="2JC-vZ-OIE" secondAttribute="leading" constant="13" id="KeA-cG-T6o"/>
+                            <constraint firstItem="Msu-HP-DRl" firstAttribute="leading" secondItem="2JC-vZ-OIE" secondAttribute="leading" constant="13" id="MfJ-4q-Ycg"/>
+                            <constraint firstItem="7P8-UH-KtX" firstAttribute="trailing" secondItem="2JC-vZ-OIE" secondAttribute="trailing" id="Y2E-kZ-TS7"/>
+                            <constraint firstItem="2JC-vZ-OIE" firstAttribute="trailing" secondItem="Msu-HP-DRl" secondAttribute="trailing" constant="13" id="ai3-Dc-lpK"/>
+                            <constraint firstItem="7P8-UH-KtX" firstAttribute="leading" secondItem="2JC-vZ-OIE" secondAttribute="leading" id="g2l-QW-KAh"/>
+                            <constraint firstItem="Msu-HP-DRl" firstAttribute="top" secondItem="2ls-6A-9TU" secondAttribute="bottom" constant="20" id="skQ-XZ-euK"/>
+                            <constraint firstItem="7P8-UH-KtX" firstAttribute="bottom" secondItem="2JC-vZ-OIE" secondAttribute="bottom" id="zq9-aA-T4T"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="wdG-l5-DiU"/>
+                    <connections>
+                        <outlet property="uiAccBtn" destination="7P8-UH-KtX" id="sSt-IE-ffp"/>
+                        <outlet property="uiCodeInput" destination="2ls-6A-9TU" id="gk2-ee-ZMc"/>
+                        <outlet property="uiHelplb" destination="Msu-HP-DRl" id="XLJ-Zh-Zpj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bVU-4k-RR1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="528.79999999999995" y="129.98500749625188"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="qti-pb-6e0">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="liQ-K3-74e" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="f7v-o7-6cD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Uf7-Yf-E7L" kind="relationship" relationship="rootViewController" id="1NV-TZ-oBd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nJ6-sU-sm3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-410.39999999999998" y="129.98500749625188"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

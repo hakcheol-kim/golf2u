@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Customer-->
+        <scene sceneID="hjn-u4-CuG">
+            <objects>
+                <viewController storyboardIdentifier="Customeridx" hidesBottomBarWhenPushed="YES" id="nzN-8z-xx1" customClass="Customer" customModule="random2u" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="av7-kf-M9j">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pkc-Qd-ctH">
+                                <rect key="frame" x="0.0" y="44" width="375" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="tqL-d5-prE"/>
+                                </constraints>
+                                <inset key="titleEdgeInsets" minX="13" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="FAQ 및 1:1 문의">
+                                    <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="onFaqBtn:" destination="nzN-8z-xx1" eventType="touchUpInside" id="AUf-gt-BMs"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="inven_arrow_right.png" translatesAutoresizingMaskIntoConstraints="NO" id="S88-wi-XSq">
+                                <rect key="frame" x="351" y="61" width="11" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="11" id="I2s-Om-Zfx"/>
+                                    <constraint firstAttribute="height" constant="15" id="qqN-dR-RuI"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PD1-3r-aRN">
+                                <rect key="frame" x="0.0" y="96" width="375" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="lrW-Of-GCw"/>
+                                </constraints>
+                                <inset key="titleEdgeInsets" minX="13" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="공지사항">
+                                    <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="onNoticeBtn:" destination="nzN-8z-xx1" eventType="touchUpInside" id="bM2-rt-Wxt"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="inven_arrow_right.png" translatesAutoresizingMaskIntoConstraints="NO" id="uVP-k1-gHG">
+                                <rect key="frame" x="351" y="114" width="11" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="11" id="Xne-pd-6uI"/>
+                                    <constraint firstAttribute="height" constant="15" id="nLh-Cu-4ci"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hI2-gA-AL2">
+                                <rect key="frame" x="0.0" y="148" width="375" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="7zk-z1-2rS"/>
+                                </constraints>
+                                <inset key="titleEdgeInsets" minX="13" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="이벤트">
+                                    <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="onEventBtn:" destination="nzN-8z-xx1" eventType="touchUpInside" id="bmu-Qj-MeT"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="inven_arrow_right.png" translatesAutoresizingMaskIntoConstraints="NO" id="lmi-pC-PCx">
+                                <rect key="frame" x="351" y="165" width="11" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="1nc-Hs-ePa"/>
+                                    <constraint firstAttribute="width" constant="11" id="Zsv-gX-pBR"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="2Jv-QQ-So0"/>
+                        <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="PD1-3r-aRN" firstAttribute="trailing" secondItem="2Jv-QQ-So0" secondAttribute="trailing" id="1Am-7a-Wkc"/>
+                            <constraint firstItem="2Jv-QQ-So0" firstAttribute="trailing" secondItem="uVP-k1-gHG" secondAttribute="trailing" constant="13" id="2sd-6v-58C"/>
+                            <constraint firstItem="pkc-Qd-ctH" firstAttribute="trailing" secondItem="2Jv-QQ-So0" secondAttribute="trailing" id="EU4-up-cJ1"/>
+                            <constraint firstItem="S88-wi-XSq" firstAttribute="top" secondItem="2Jv-QQ-So0" secondAttribute="top" constant="17" id="FOz-ns-u4j"/>
+                            <constraint firstItem="2Jv-QQ-So0" firstAttribute="trailing" secondItem="lmi-pC-PCx" secondAttribute="trailing" constant="13" id="IKF-gN-k5j"/>
+                            <constraint firstItem="2Jv-QQ-So0" firstAttribute="trailing" secondItem="S88-wi-XSq" secondAttribute="trailing" constant="13" id="NRC-He-399"/>
+                            <constraint firstItem="PD1-3r-aRN" firstAttribute="leading" secondItem="2Jv-QQ-So0" secondAttribute="leading" id="UyU-6X-IPD"/>
+                            <constraint firstItem="PD1-3r-aRN" firstAttribute="top" secondItem="pkc-Qd-ctH" secondAttribute="bottom" constant="2" id="cn5-6o-8D7"/>
+                            <constraint firstItem="hI2-gA-AL2" firstAttribute="trailing" secondItem="2Jv-QQ-So0" secondAttribute="trailing" id="dC6-rx-JZi"/>
+                            <constraint firstItem="pkc-Qd-ctH" firstAttribute="top" secondItem="2Jv-QQ-So0" secondAttribute="top" id="fjj-Tg-9Mz"/>
+                            <constraint firstItem="hI2-gA-AL2" firstAttribute="leading" secondItem="2Jv-QQ-So0" secondAttribute="leading" id="gZx-1F-vHF"/>
+                            <constraint firstItem="pkc-Qd-ctH" firstAttribute="leading" secondItem="2Jv-QQ-So0" secondAttribute="leading" id="iYL-K0-n2f"/>
+                            <constraint firstItem="uVP-k1-gHG" firstAttribute="top" secondItem="pkc-Qd-ctH" secondAttribute="bottom" constant="20" id="jtb-VL-ELK"/>
+                            <constraint firstItem="lmi-pC-PCx" firstAttribute="top" secondItem="PD1-3r-aRN" secondAttribute="bottom" constant="19" id="jvD-ct-Bre"/>
+                            <constraint firstItem="hI2-gA-AL2" firstAttribute="top" secondItem="PD1-3r-aRN" secondAttribute="bottom" constant="2" id="oWx-ZP-KMt"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="gmU-FS-aqs"/>
+                    <connections>
+                        <outlet property="uiEventBtn" destination="hI2-gA-AL2" id="K1Q-ck-Q3f"/>
+                        <outlet property="uiFaqBtn" destination="pkc-Qd-ctH" id="Fcj-pb-JAW"/>
+                        <outlet property="uiNoticeBtn" destination="PD1-3r-aRN" id="EPC-cS-vQ3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8dn-bL-8u1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="903.20000000000005" y="145.27736131934034"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="u45-iK-7Gk">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="OWS-hp-qUq" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="EaK-Sz-1c0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="nzN-8z-xx1" kind="relationship" relationship="rootViewController" id="Dwc-W8-BO3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RHM-Wc-kdf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-36" y="145.27736131934034"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="inven_arrow_right.png" width="24" height="40"/>
+    </resources>
+</document>

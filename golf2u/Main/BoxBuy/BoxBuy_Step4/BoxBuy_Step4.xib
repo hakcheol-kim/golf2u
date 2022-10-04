@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="BoxBuy_Step4idx" id="gTV-IL-0wX" customClass="BoxBuy_Step4" customModule="golf2u" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="307"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="307"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="결제 안내" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HHu-MO-wfF">
+                        <rect key="frame" x="13" y="10" width="176" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="BdN-nC-aTu"/>
+                            <constraint firstAttribute="width" constant="176" id="s2l-71-k5q"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="구매한 랜덤박스를 열면 무작위로 하나의 상품을 획득하게 됩니다. 획득가능한 상품의 목록은 골투샵의 상품 목록 또는 박스보관함의 상품리스트에서 확인할 수 있습니다." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wkd-bc-lej">
+                        <rect key="frame" x="13" y="37" width="349" height="61"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="61" id="H3F-1f-n0o"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UZQ-PK-HED">
+                        <rect key="frame" x="13" y="103" width="349" height="33"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="교환, 환불 안내" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QMP-25-np9">
+                                <rect key="frame" x="8" y="9" width="82" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="82" id="1SE-eT-YY7"/>
+                                    <constraint firstAttribute="height" constant="15" id="FXq-yV-bB9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xrq-YG-bof">
+                                <rect key="frame" x="324" y="6" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="HxA-qD-ECn"/>
+                                    <constraint firstAttribute="height" constant="20" id="svl-bS-8nh"/>
+                                </constraints>
+                                <state key="normal" image="boxbuy_arrow_up.png"/>
+                                <connections>
+                                    <action selector="onSlider:" destination="gTV-IL-0wX" eventType="touchUpInside" id="xHv-wj-OUc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="33" id="0zb-GF-Cvj"/>
+                            <constraint firstAttribute="trailing" secondItem="xrq-YG-bof" secondAttribute="trailing" constant="5" id="9fW-zX-flK"/>
+                            <constraint firstItem="QMP-25-np9" firstAttribute="leading" secondItem="UZQ-PK-HED" secondAttribute="leading" constant="8" id="CiB-iq-0Vw"/>
+                            <constraint firstItem="QMP-25-np9" firstAttribute="top" secondItem="UZQ-PK-HED" secondAttribute="top" constant="9" id="NMz-sK-nl6"/>
+                            <constraint firstItem="xrq-YG-bof" firstAttribute="top" secondItem="UZQ-PK-HED" secondAttribute="top" constant="6" id="b15-a6-AbA"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A60-Qd-Kut">
+                        <rect key="frame" x="13" y="141" width="349" height="163"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="163" id="nYP-Nj-vyR"/>
+                        </constraints>
+                        <string key="text">결제취소는 결제일로부터 7일 이내에 미사용한 랜덤박스에 한해 가능합니다. 
+랜덤박스를 열어서 상품을 획득한 경우, 해당 랜덤박스는 사용한 것이므로, 결제취소는 불가능합니다. 
+랜덤박스를 통해 배송 받은 상품에 하자가 있을 경우, 상품을 교환 또는 결제한 랜덤박스 금액으로 환불 받을 수 있습니다. 
+배송 받은 상품에 대해 하자가 아닌 단순 변심, 불만족 등으로 인한 교환 및 환불은 불가능합니다.</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="UZQ-PK-HED" secondAttribute="trailing" constant="13" id="0pU-Mv-UFQ"/>
+                <constraint firstItem="wkd-bc-lej" firstAttribute="top" secondItem="HHu-MO-wfF" secondAttribute="bottom" constant="9" id="3GK-ow-W8u"/>
+                <constraint firstItem="UZQ-PK-HED" firstAttribute="top" secondItem="wkd-bc-lej" secondAttribute="bottom" constant="5" id="9FG-RY-FEa"/>
+                <constraint firstItem="HHu-MO-wfF" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="HCG-6X-ORV"/>
+                <constraint firstItem="A60-Qd-Kut" firstAttribute="top" secondItem="UZQ-PK-HED" secondAttribute="bottom" constant="5" id="Lum-Kz-rGu"/>
+                <constraint firstAttribute="trailing" secondItem="A60-Qd-Kut" secondAttribute="trailing" constant="13" id="Q2v-Na-srd"/>
+                <constraint firstItem="A60-Qd-Kut" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="13" id="fjV-Wv-Wwr"/>
+                <constraint firstAttribute="trailing" secondItem="wkd-bc-lej" secondAttribute="trailing" constant="13" id="hAX-qq-75b"/>
+                <constraint firstItem="wkd-bc-lej" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="13" id="hbW-je-Dtl"/>
+                <constraint firstItem="HHu-MO-wfF" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="13" id="t0K-om-t8c"/>
+                <constraint firstItem="UZQ-PK-HED" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="13" id="wD3-Dn-49Q"/>
+            </constraints>
+            <size key="customSize" width="375" height="307"/>
+            <connections>
+                <outlet property="uiSilderBtn" destination="xrq-YG-bof" id="Ede-MB-MY6"/>
+                <outlet property="uiTabView" destination="UZQ-PK-HED" id="j1p-80-APE"/>
+                <outlet property="uilb1" destination="HHu-MO-wfF" id="ftm-WE-uRd"/>
+                <outlet property="uilb2" destination="wkd-bc-lej" id="osT-fD-Swd"/>
+                <outlet property="uilb3" destination="QMP-25-np9" id="8ej-vA-yfS"/>
+                <outlet property="uilb4" destination="A60-Qd-Kut" id="bfh-uG-53p"/>
+            </connections>
+            <point key="canvasLocation" x="138.40579710144928" y="179.79910714285714"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="boxbuy_arrow_up.png" width="70" height="70"/>
+    </resources>
+</document>

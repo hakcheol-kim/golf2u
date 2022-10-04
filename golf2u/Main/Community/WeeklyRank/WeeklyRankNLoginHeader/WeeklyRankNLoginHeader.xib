@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="WeeklyRankNLoginHeaderidx" id="U6b-Vx-4bR" customClass="WeeklyRankNLoginHeader" customModule="golf2u" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="239"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="comty_bg_nonlogin.png" translatesAutoresizingMaskIntoConstraints="NO" id="3Lf-Od-aZu">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="239"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="랭킹전에 참가하여 다양한 보상을 받아보세요!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FZK-7l-cBi">
+                    <rect key="frame" x="16" y="68" width="288" height="43"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="43" id="SCs-iY-Xx5"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o8d-D7-7nX">
+                    <rect key="frame" x="73" y="131" width="175" height="40"/>
+                    <color key="backgroundColor" red="0.0" green="0.72941176470000002" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="sa5-ut-ojo"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" title="로그인하여 자동 참가">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="o8d-D7-7nX" secondAttribute="trailing" constant="72" id="2F4-Hv-YPk"/>
+                <constraint firstItem="3Lf-Od-aZu" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" id="D5d-fg-x34"/>
+                <constraint firstItem="FZK-7l-cBi" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" constant="16" id="DJn-yX-Jkj"/>
+                <constraint firstItem="3Lf-Od-aZu" firstAttribute="trailing" secondItem="VXr-Tz-HHm" secondAttribute="trailing" id="V5C-ZE-yUz"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="FZK-7l-cBi" secondAttribute="trailing" constant="16" id="VCu-uc-RkD"/>
+                <constraint firstItem="o8d-D7-7nX" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" constant="73" id="XIT-b6-dKy"/>
+                <constraint firstItem="3Lf-Od-aZu" firstAttribute="bottom" secondItem="VXr-Tz-HHm" secondAttribute="bottom" id="eSv-e2-3rk"/>
+                <constraint firstItem="FZK-7l-cBi" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" constant="68" id="jCQ-Bf-f2t"/>
+                <constraint firstItem="3Lf-Od-aZu" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="tjb-yN-7rA"/>
+                <constraint firstItem="o8d-D7-7nX" firstAttribute="top" secondItem="FZK-7l-cBi" secondAttribute="bottom" constant="20" id="vKN-Zz-iFy"/>
+            </constraints>
+            <connections>
+                <outlet property="uiLoginBtn" destination="o8d-D7-7nX" id="r2Y-E1-PfZ"/>
+                <outlet property="uiTitle" destination="FZK-7l-cBi" id="Sgd-li-SNo"/>
+            </connections>
+            <point key="canvasLocation" x="28.985507246376812" y="99.107142857142847"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="comty_bg_nonlogin.png" width="1440" height="720"/>
+    </resources>
+</document>

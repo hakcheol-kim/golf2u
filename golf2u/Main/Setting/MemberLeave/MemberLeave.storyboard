@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Member Leave-->
+        <scene sceneID="loC-2m-ndd">
+            <objects>
+                <viewController storyboardIdentifier="MemberLeaveidx" id="r33-kN-2Wy" customClass="MemberLeave" customModule="golf2u" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Pyb-ei-fdF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="탈퇴사유를 선택하세요." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iOV-EH-rZm">
+                                <rect key="frame" x="13" y="70" width="349" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="rfe-Ec-woJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow_down.png" translatesAutoresizingMaskIntoConstraints="NO" id="vFU-Km-KIq">
+                                <rect key="frame" x="339" y="89" width="13" height="13"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="13" id="diq-YU-Omb"/>
+                                    <constraint firstAttribute="width" constant="13" id="qur-F6-y9x"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ViP-OQ-ghL">
+                                <rect key="frame" x="13" y="128" width="349" height="165"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="165" id="Nzh-Ix-aJ8"/>
+                                </constraints>
+                                <string key="text">[회원탈퇴 유의사항]  
+- 랜덤투유 회원탈퇴 시 본 어플리케이션 서비스에 탈퇴되며, 탈퇴한 계정의정보는 복구가 불가능합니다.  
+- 탈퇴한 계정의 정보는 모두 삭제됩니다.
+ 
+ ■ 삭제 정보 
+닉네임, 이메일, 클로버 정보, 상품 정보, 박스 내역정보 등의 랜덤투유 전체 이용 정보</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E0L-zt-KhC">
+                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.72941176470000002" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="gsQ-ei-yks"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="탈퇴하기">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="onAccBtn:" destination="r33-kN-2Wy" eventType="touchUpInside" id="Odz-3D-IKz"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JGN-rI-57d">
+                                <rect key="frame" x="0.0" y="577" width="375" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mF6-ls-5JS" customClass="CircleCheckBoxBtn" customModule="golf2u" customModuleProvider="target">
+                                        <rect key="frame" x="13" y="10" width="21" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="21" id="9BI-ly-CAG"/>
+                                            <constraint firstAttribute="height" constant="21" id="Puj-FQ-Pgz"/>
+                                        </constraints>
+                                        <color key="tintColor" red="0.0" green="0.72941176470000002" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" image="check_circle_blank.png">
+                                            <color key="titleColor" red="0.0" green="0.72941176470000002" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="내용을 확인하였으며, 랜덤투유 계정을 삭제합니다." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R5G-LK-JVg">
+                                        <rect key="frame" x="42" y="12" width="320" height="17"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="17" id="Mjk-8b-p1s"/>
+                                            <constraint firstAttribute="width" constant="320" id="WHh-ed-CqA"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="mF6-ls-5JS" firstAttribute="leading" secondItem="JGN-rI-57d" secondAttribute="leading" constant="13" id="3mq-nC-3Nh"/>
+                                    <constraint firstItem="mF6-ls-5JS" firstAttribute="top" secondItem="JGN-rI-57d" secondAttribute="top" constant="10" id="J56-pU-QhN"/>
+                                    <constraint firstItem="R5G-LK-JVg" firstAttribute="top" secondItem="JGN-rI-57d" secondAttribute="top" constant="12" id="Oai-rs-f4y"/>
+                                    <constraint firstAttribute="height" constant="40" id="VD3-sc-JIp"/>
+                                    <constraint firstItem="R5G-LK-JVg" firstAttribute="leading" secondItem="mF6-ls-5JS" secondAttribute="trailing" constant="8" symbolic="YES" id="nGs-2r-LaS"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6VL-UJ-3b2">
+                                <rect key="frame" x="13" y="301" width="349" height="67"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="F4Q-k9-ate"/>
+                                </constraints>
+                                <string key="text">[통합회원 유의사항]
+- 네모난오렌지 통합회원 절차에 동의하신 유저의 경우 
+탈퇴 시 네모난 오렌지에서 제공하는 모든 서비스에서 탈퇴합니다.
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="eb7-Ue-wP2"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vFU-Km-KIq" firstAttribute="top" secondItem="eb7-Ue-wP2" secondAttribute="top" constant="45" id="0bT-vE-WF5"/>
+                            <constraint firstItem="eb7-Ue-wP2" firstAttribute="trailing" secondItem="vFU-Km-KIq" secondAttribute="trailing" constant="23" id="2xZ-Uq-nii"/>
+                            <constraint firstItem="iOV-EH-rZm" firstAttribute="top" secondItem="eb7-Ue-wP2" secondAttribute="top" constant="26" id="6CM-Gb-Sp4"/>
+                            <constraint firstItem="6VL-UJ-3b2" firstAttribute="leading" secondItem="eb7-Ue-wP2" secondAttribute="leading" constant="13" id="6bk-b0-It9"/>
+                            <constraint firstItem="ViP-OQ-ghL" firstAttribute="leading" secondItem="eb7-Ue-wP2" secondAttribute="leading" constant="13" id="700-s9-BGm"/>
+                            <constraint firstItem="JGN-rI-57d" firstAttribute="trailing" secondItem="eb7-Ue-wP2" secondAttribute="trailing" id="76R-1h-6BN"/>
+                            <constraint firstItem="ViP-OQ-ghL" firstAttribute="top" secondItem="iOV-EH-rZm" secondAttribute="bottom" constant="8" symbolic="YES" id="8Hw-uN-vis"/>
+                            <constraint firstItem="E0L-zt-KhC" firstAttribute="bottom" secondItem="eb7-Ue-wP2" secondAttribute="bottom" id="BWH-vD-GFz"/>
+                            <constraint firstItem="iOV-EH-rZm" firstAttribute="leading" secondItem="eb7-Ue-wP2" secondAttribute="leading" constant="13" id="E5e-wE-dbE"/>
+                            <constraint firstItem="6VL-UJ-3b2" firstAttribute="top" secondItem="ViP-OQ-ghL" secondAttribute="bottom" constant="8" symbolic="YES" id="FYm-ob-fkw"/>
+                            <constraint firstItem="E0L-zt-KhC" firstAttribute="trailing" secondItem="eb7-Ue-wP2" secondAttribute="trailing" id="Hn2-CM-Ffl"/>
+                            <constraint firstItem="eb7-Ue-wP2" firstAttribute="trailing" secondItem="ViP-OQ-ghL" secondAttribute="trailing" constant="13" id="PbY-mw-Rr1"/>
+                            <constraint firstItem="E0L-zt-KhC" firstAttribute="top" secondItem="JGN-rI-57d" secondAttribute="bottom" id="U6m-eS-vdg"/>
+                            <constraint firstItem="E0L-zt-KhC" firstAttribute="leading" secondItem="eb7-Ue-wP2" secondAttribute="leading" id="hd2-dm-0o8"/>
+                            <constraint firstItem="eb7-Ue-wP2" firstAttribute="trailing" secondItem="6VL-UJ-3b2" secondAttribute="trailing" constant="13" id="hni-In-YAW"/>
+                            <constraint firstItem="JGN-rI-57d" firstAttribute="leading" secondItem="eb7-Ue-wP2" secondAttribute="leading" id="kxd-xI-tiX"/>
+                            <constraint firstItem="eb7-Ue-wP2" firstAttribute="trailing" secondItem="iOV-EH-rZm" secondAttribute="trailing" constant="13" id="wRE-kt-98E"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="59C-PR-Jdk"/>
+                    <connections>
+                        <outlet property="uiAccBtn" destination="E0L-zt-KhC" id="Ajr-z5-l0h"/>
+                        <outlet property="uiAgree" destination="mF6-ls-5JS" id="3ld-sh-pzz"/>
+                        <outlet property="uiBottomView" destination="JGN-rI-57d" id="QOo-d3-BKn"/>
+                        <outlet property="uiHelp1lb" destination="ViP-OQ-ghL" id="okv-jB-utE"/>
+                        <outlet property="uiHelp2lb" destination="R5G-LK-JVg" id="rFw-bt-1AH"/>
+                        <outlet property="uiTypeInput" destination="iOV-EH-rZm" id="GRU-zf-Aus"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hBS-ST-Inb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="866.39999999999998" y="148.87556221889056"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="gPz-Gn-uPj">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="KZT-KL-9MV" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9JQ-t9-fKm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="r33-kN-2Wy" kind="relationship" relationship="rootViewController" id="KX5-aI-lSW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eq8-Dd-Fgl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-72.799999999999997" y="148.87556221889056"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow_down.png" width="120" height="72"/>
+        <image name="check_circle_blank.png" width="60" height="60"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

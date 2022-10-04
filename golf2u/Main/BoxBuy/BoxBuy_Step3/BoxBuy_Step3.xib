@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="BoxBuy_Step3idx" id="gTV-IL-0wX" customClass="BoxBuy_Step3" customModule="golf2u" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="466"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="466"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="클로버 사용" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jEg-Nx-kDI">
+                        <rect key="frame" x="13" y="11" width="69" height="18"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="쿠폰사용" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MCi-wG-9Fb">
+                        <rect key="frame" x="13" y="117" width="52" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="Zbi-xk-D1a"/>
+                            <constraint firstAttribute="width" constant="52" id="lHP-RW-wet"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="결제 수단" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vFD-0t-Ogb">
+                        <rect key="frame" x="13" y="223" width="56" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="EB9-3r-dkW"/>
+                            <constraint firstAttribute="width" constant="56" id="jrX-6I-YxV"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="적용하실 쿠폰을 선택하세요." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7ou-gy-R5h">
+                        <rect key="frame" x="13" y="142" width="349" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="mwE-xm-Pdj"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="0" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4j1-zf-Y1E">
+                        <rect key="frame" x="13" y="36" width="283" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="raf-Br-hT6"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                    </textField>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uyo-9f-MFd">
+                        <rect key="frame" x="250" y="36" width="112" height="50"/>
+                        <color key="backgroundColor" red="0.0" green="0.72941176470000002" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="112" id="DNs-d6-Djo"/>
+                            <constraint firstAttribute="height" constant="50" id="nFX-Ck-aHd"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                        <state key="normal" title="전액사용">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <connections>
+                            <action selector="onCloverAll:" destination="gTV-IL-0wX" eventType="touchUpInside" id="ORR-Pn-Esw"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="보유중인 클로버 [0 클로버]" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IBm-6Q-N0P">
+                        <rect key="frame" x="13" y="93" width="349" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="3Jc-wc-yyQ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="※쿠폰은 중복적용이 불가능합니다." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qeb-bt-Ttg">
+                        <rect key="frame" x="13" y="199" width="349" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="Evn-2o-rOY"/>
+                            <constraint firstAttribute="width" constant="349" id="fY8-W2-gKT"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.0" green="0.72941176470000002" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4tN-Se-g5v">
+                        <rect key="frame" x="13" y="256" width="169" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="169" id="d7w-Ty-82P"/>
+                            <constraint firstAttribute="height" constant="40" id="fZ6-bv-5es"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="카드결제">
+                            <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="onPayBtn:" destination="gTV-IL-0wX" eventType="touchUpInside" id="5M3-fb-D8y"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aqg-Fe-PH0">
+                        <rect key="frame" x="193" y="256" width="169" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="3gs-bn-Zhr"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="휴대폰 결제(SKT 불가)">
+                            <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="onPhoneBtn:" destination="gTV-IL-0wX" eventType="touchUpInside" id="Vco-7K-H0p"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uOg-oq-pNG">
+                        <rect key="frame" x="13" y="306" width="169" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="169" id="6Wf-rk-N0x"/>
+                            <constraint firstAttribute="height" constant="40" id="Prw-wi-BvI"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="실시간 계좌이체">
+                            <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="onRealBtn:" destination="gTV-IL-0wX" eventType="touchUpInside" id="6Oo-bZ-fz6"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F4K-di-VgH">
+                        <rect key="frame" x="193" y="306" width="169" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="Fpu-ur-qCE"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="무통장 입금">
+                            <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="onBankBtn:" destination="gTV-IL-0wX" eventType="touchUpInside" id="9Js-8C-o12"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1dr-je-m83">
+                        <rect key="frame" x="13" y="356" width="169" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="BuJ-C0-iAA"/>
+                            <constraint firstAttribute="width" constant="169" id="VzW-Wa-Uj4"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="카카오페이">
+                            <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="onKakaoPayBtn:" destination="gTV-IL-0wX" eventType="touchUpInside" id="ZEA-0G-ZeH"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g6G-P0-nTS">
+                        <rect key="frame" x="13" y="406" width="169" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="169" id="5j9-6e-cMP"/>
+                            <constraint firstAttribute="height" constant="40" id="qC7-rc-DW6"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="네이버페이">
+                            <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="onNaverPayBtn:" destination="gTV-IL-0wX" eventType="touchUpInside" id="q5v-JF-gJA"/>
+                        </connections>
+                    </button>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow_down.png" translatesAutoresizingMaskIntoConstraints="NO" id="fWy-xd-jmX">
+                        <rect key="frame" x="341" y="161" width="13" height="13"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="13" id="Ayl-5F-x9y"/>
+                            <constraint firstAttribute="width" constant="13" id="eIV-ga-7Li"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eft-oB-L5c">
+                        <rect key="frame" x="193" y="356" width="169" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="j3I-uw-eHm"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="페이코">
+                            <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="onPaycoBtn:" destination="gTV-IL-0wX" eventType="touchUpInside" id="Rpe-uK-Pqm"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Y7-Bc-rPo">
+                        <rect key="frame" x="193" y="406" width="169" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="r9V-4O-mey"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="CHAIpay">
+                            <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="onChaiPayBtn:" destination="gTV-IL-0wX" eventType="touchUpInside" id="exk-Ay-RTx"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lSE-qt-5qi">
+                        <rect key="frame" x="92" y="10" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="fei-5s-8vE"/>
+                            <constraint firstAttribute="height" constant="20" id="qGl-cG-7WK"/>
+                        </constraints>
+                        <state key="normal" image="inven_question.png"/>
+                        <connections>
+                            <action selector="onHelp:" destination="gTV-IL-0wX" eventType="touchUpInside" id="NMv-o3-bV8"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="jEg-Nx-kDI" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="11" id="2XC-Fi-LJe"/>
+                <constraint firstItem="MCi-wG-9Fb" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="13" id="2wP-nY-50L"/>
+                <constraint firstItem="4j1-zf-Y1E" firstAttribute="top" secondItem="lSE-qt-5qi" secondAttribute="bottom" constant="6" id="32V-XO-Gwm"/>
+                <constraint firstItem="g6G-P0-nTS" firstAttribute="width" secondItem="2Y7-Bc-rPo" secondAttribute="width" id="3AG-E8-jMV"/>
+                <constraint firstItem="Qeb-bt-Ttg" firstAttribute="top" secondItem="7ou-gy-R5h" secondAttribute="bottom" constant="7" id="4Q5-V5-LoB"/>
+                <constraint firstItem="2Y7-Bc-rPo" firstAttribute="top" secondItem="eft-oB-L5c" secondAttribute="bottom" constant="10" id="6db-HH-RGe"/>
+                <constraint firstItem="2Y7-Bc-rPo" firstAttribute="leading" secondItem="g6G-P0-nTS" secondAttribute="trailing" constant="11" id="8fI-D4-3Eg"/>
+                <constraint firstItem="g6G-P0-nTS" firstAttribute="top" secondItem="1dr-je-m83" secondAttribute="bottom" constant="10" id="9XL-jm-nFV"/>
+                <constraint firstItem="1dr-je-m83" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="13" id="9ol-EU-MqM"/>
+                <constraint firstItem="4tN-Se-g5v" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="13" id="Cec-i1-WKx"/>
+                <constraint firstItem="vFD-0t-Ogb" firstAttribute="top" secondItem="Qeb-bt-Ttg" secondAttribute="bottom" constant="10" id="FnG-jr-r85"/>
+                <constraint firstItem="eft-oB-L5c" firstAttribute="top" secondItem="F4K-di-VgH" secondAttribute="bottom" constant="10" id="G6S-Ph-Tn3"/>
+                <constraint firstItem="IBm-6Q-N0P" firstAttribute="top" secondItem="4j1-zf-Y1E" secondAttribute="bottom" constant="7" id="Hp3-av-xEJ"/>
+                <constraint firstAttribute="trailing" secondItem="uyo-9f-MFd" secondAttribute="trailing" constant="13" id="ITJ-Sf-PjN"/>
+                <constraint firstItem="Qeb-bt-Ttg" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="13" id="Mp2-4R-kIL"/>
+                <constraint firstAttribute="trailing" secondItem="4j1-zf-Y1E" secondAttribute="trailing" constant="79" id="NRf-mf-gnT"/>
+                <constraint firstItem="uyo-9f-MFd" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="36" id="QQt-mQ-hTe"/>
+                <constraint firstItem="1dr-je-m83" firstAttribute="width" secondItem="eft-oB-L5c" secondAttribute="width" id="Ql3-T4-DsV"/>
+                <constraint firstItem="lSE-qt-5qi" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="Qyg-om-Gte"/>
+                <constraint firstAttribute="trailing" secondItem="7ou-gy-R5h" secondAttribute="trailing" constant="13" id="SPU-Sm-1Cx"/>
+                <constraint firstItem="aqg-Fe-PH0" firstAttribute="leading" secondItem="4tN-Se-g5v" secondAttribute="trailing" constant="11" id="Uek-Tz-V0X"/>
+                <constraint firstItem="IBm-6Q-N0P" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="13" id="VI6-t0-QJY"/>
+                <constraint firstItem="g6G-P0-nTS" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="13" id="Xvg-bU-m30"/>
+                <constraint firstAttribute="trailing" secondItem="eft-oB-L5c" secondAttribute="trailing" constant="13" id="YI0-lc-IK4"/>
+                <constraint firstItem="7ou-gy-R5h" firstAttribute="top" secondItem="MCi-wG-9Fb" secondAttribute="bottom" constant="7" id="fkM-vG-Ky4"/>
+                <constraint firstItem="MCi-wG-9Fb" firstAttribute="top" secondItem="IBm-6Q-N0P" secondAttribute="bottom" constant="10" id="g8g-aD-Rep"/>
+                <constraint firstAttribute="trailing" secondItem="fWy-xd-jmX" secondAttribute="trailing" constant="21" id="jvp-pS-Ldj"/>
+                <constraint firstItem="4j1-zf-Y1E" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="13" id="kOJ-92-fAi"/>
+                <constraint firstItem="uOg-oq-pNG" firstAttribute="top" secondItem="4tN-Se-g5v" secondAttribute="bottom" constant="10" id="oy9-vh-VS6"/>
+                <constraint firstItem="7ou-gy-R5h" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="13" id="pJR-L5-vix"/>
+                <constraint firstItem="4tN-Se-g5v" firstAttribute="width" secondItem="aqg-Fe-PH0" secondAttribute="width" id="qSh-Ua-XZj"/>
+                <constraint firstItem="aqg-Fe-PH0" firstAttribute="top" secondItem="Qeb-bt-Ttg" secondAttribute="bottom" constant="43" id="rNW-Q1-zTf"/>
+                <constraint firstItem="jEg-Nx-kDI" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="13" id="sHl-eh-hsR"/>
+                <constraint firstItem="lSE-qt-5qi" firstAttribute="leading" secondItem="jEg-Nx-kDI" secondAttribute="trailing" constant="10" id="saB-ip-evB"/>
+                <constraint firstItem="eft-oB-L5c" firstAttribute="leading" secondItem="1dr-je-m83" secondAttribute="trailing" constant="11" id="u0h-Jv-TbM"/>
+                <constraint firstAttribute="trailing" secondItem="2Y7-Bc-rPo" secondAttribute="trailing" constant="13" id="uls-ZI-apg"/>
+                <constraint firstItem="uOg-oq-pNG" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="13" id="vIi-9P-TPQ"/>
+                <constraint firstItem="vFD-0t-Ogb" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="13" id="vYT-CD-89P"/>
+                <constraint firstItem="F4K-di-VgH" firstAttribute="top" secondItem="aqg-Fe-PH0" secondAttribute="bottom" constant="10" id="wGX-EP-1we"/>
+                <constraint firstAttribute="trailing" secondItem="aqg-Fe-PH0" secondAttribute="trailing" constant="13" id="wGn-Ga-TS3"/>
+                <constraint firstItem="4tN-Se-g5v" firstAttribute="top" secondItem="vFD-0t-Ogb" secondAttribute="bottom" constant="15" id="wJg-6p-X0U"/>
+                <constraint firstAttribute="trailing" secondItem="F4K-di-VgH" secondAttribute="trailing" constant="13" id="wVK-uI-ub6"/>
+                <constraint firstItem="F4K-di-VgH" firstAttribute="leading" secondItem="uOg-oq-pNG" secondAttribute="trailing" constant="11" id="y9X-nM-B2i"/>
+                <constraint firstItem="1dr-je-m83" firstAttribute="top" secondItem="uOg-oq-pNG" secondAttribute="bottom" constant="10" id="yAd-mj-2AY"/>
+                <constraint firstAttribute="trailing" secondItem="IBm-6Q-N0P" secondAttribute="trailing" constant="13" id="yUz-nM-BDB"/>
+                <constraint firstItem="uOg-oq-pNG" firstAttribute="width" secondItem="F4K-di-VgH" secondAttribute="width" id="zGa-fb-2vi"/>
+                <constraint firstItem="fWy-xd-jmX" firstAttribute="top" secondItem="IBm-6Q-N0P" secondAttribute="bottom" constant="54" id="znc-jd-Kv0"/>
+            </constraints>
+            <size key="customSize" width="375" height="486"/>
+            <connections>
+                <outlet property="uiBankBtn" destination="F4K-di-VgH" id="ceP-Nh-Thw"/>
+                <outlet property="uiCloverAllBtn" destination="uyo-9f-MFd" id="8uc-mp-vMv"/>
+                <outlet property="uiCloverInput" destination="4j1-zf-Y1E" id="V8s-1O-nEd"/>
+                <outlet property="uiCuponCombo" destination="7ou-gy-R5h" id="4RF-Sf-8zy"/>
+                <outlet property="uiMyCloverLabel" destination="IBm-6Q-N0P" id="UxW-c1-mDy"/>
+                <outlet property="uiPayCardBtn" destination="4tN-Se-g5v" id="Tgb-aE-scb"/>
+                <outlet property="uiPayPhoneBtn" destination="aqg-Fe-PH0" id="1oq-bc-Nvv"/>
+                <outlet property="uiPayRealBankBtn" destination="uOg-oq-pNG" id="ZQn-xo-1FR"/>
+                <outlet property="uiTitle1lb" destination="jEg-Nx-kDI" id="qdh-6Q-kg3"/>
+                <outlet property="uiTitle2lb" destination="MCi-wG-9Fb" id="Y4F-2s-E6C"/>
+                <outlet property="uiTitle3lb" destination="Qeb-bt-Ttg" id="iRE-hL-EhT"/>
+                <outlet property="uiTitle4lb" destination="vFD-0t-Ogb" id="Hkf-fE-v6V"/>
+                <outlet property="uichaipay" destination="2Y7-Bc-rPo" id="ucW-I9-dfr"/>
+                <outlet property="uikakaopay" destination="1dr-je-m83" id="76v-aj-NMG"/>
+                <outlet property="uinaverpay" destination="g6G-P0-nTS" id="pQN-TZ-oKC"/>
+                <outlet property="uipayco" destination="eft-oB-L5c" id="l1x-fj-9wV"/>
+            </connections>
+            <point key="canvasLocation" x="136.95652173913044" y="56.25"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="arrow_down.png" width="120" height="72"/>
+        <image name="inven_question.png" width="60" height="60"/>
+    </resources>
+</document>

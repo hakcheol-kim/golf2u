@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Cupon Info Paper-->
+        <scene sceneID="86D-Vh-xRP">
+            <objects>
+                <viewController storyboardIdentifier="CuponInfoPaperidx" hidesBottomBarWhenPushed="YES" id="wZh-0r-jmO" customClass="CuponInfoPaper" customModule="golf2u" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="p8A-1B-Dxs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="쿠폰번호를 입력해주세요." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OWe-0G-8Gu">
+                                <rect key="frame" x="13" y="70" width="349" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="faC-3s-feu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F4G-5c-1L6">
+                                <rect key="frame" x="13" y="140" width="349" height="138"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="138" id="Dlq-oh-Nad"/>
+                                </constraints>
+                                <string key="text">쿠폰번호 입력을 통해 지류쿠폰을 등록할 수 있습니다. 
+유효기간이 지났거나 1인당 참여횟수를 초과한 쿠폰은 등록이 제한됩니다. 
+지류쿠폰은 중복참여 확인을 위해 본인인증이 필요합니다. 
+등록 오류 시, 고객센터로 1:1문의 바랍니다.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ghf-BE-lgy">
+                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.72941176470000002" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Tvo-OL-TjY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="쿠폰 등록">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="onAccBtn:" destination="wZh-0r-jmO" eventType="touchUpInside" id="ZIA-uU-uoX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="knL-OM-6kO"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ghf-BE-lgy" firstAttribute="leading" secondItem="knL-OM-6kO" secondAttribute="leading" id="0M5-n1-dYv"/>
+                            <constraint firstItem="OWe-0G-8Gu" firstAttribute="top" secondItem="knL-OM-6kO" secondAttribute="top" constant="26" id="BMb-au-q7t"/>
+                            <constraint firstItem="knL-OM-6kO" firstAttribute="trailing" secondItem="F4G-5c-1L6" secondAttribute="trailing" constant="13" id="GQy-1o-PmO"/>
+                            <constraint firstItem="F4G-5c-1L6" firstAttribute="top" secondItem="OWe-0G-8Gu" secondAttribute="bottom" constant="20" id="J5A-U8-etE"/>
+                            <constraint firstItem="ghf-BE-lgy" firstAttribute="bottom" secondItem="knL-OM-6kO" secondAttribute="bottom" id="ca9-Ts-60r"/>
+                            <constraint firstItem="F4G-5c-1L6" firstAttribute="leading" secondItem="knL-OM-6kO" secondAttribute="leading" constant="13" id="i7u-AG-ebM"/>
+                            <constraint firstItem="OWe-0G-8Gu" firstAttribute="leading" secondItem="knL-OM-6kO" secondAttribute="leading" constant="13" id="mg9-cl-hmD"/>
+                            <constraint firstItem="ghf-BE-lgy" firstAttribute="trailing" secondItem="knL-OM-6kO" secondAttribute="trailing" id="owv-D3-1F0"/>
+                            <constraint firstItem="knL-OM-6kO" firstAttribute="trailing" secondItem="OWe-0G-8Gu" secondAttribute="trailing" constant="13" id="pGA-vW-sJq"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="7CI-rq-kjJ"/>
+                    <connections>
+                        <outlet property="uiAccBtn" destination="ghf-BE-lgy" id="El4-YG-nIh"/>
+                        <outlet property="uiCuponNumInput" destination="OWe-0G-8Gu" id="vMm-Am-H7f"/>
+                        <outlet property="uiHelplb" destination="F4G-5c-1L6" id="0N5-2A-9Av"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="axO-Uq-hlL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="850.39999999999998" y="156.97151424287858"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Ua8-xB-KSf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BPv-HR-3AP" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9t3-ks-A6D">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="wZh-0r-jmO" kind="relationship" relationship="rootViewController" id="Oq5-QS-XuZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bxG-Mo-MhN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-88.799999999999997" y="156.97151424287858"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

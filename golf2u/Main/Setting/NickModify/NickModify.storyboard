@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Nick Modify-->
+        <scene sceneID="ARz-QT-YgX">
+            <objects>
+                <viewController storyboardIdentifier="NickModifyidx" id="vGc-dR-uZD" customClass="NickModify" customModule="golf2u" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xdn-gL-geU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="변경할 닉네임을 입력해주세요." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4rJ-E5-Dzf">
+                                <rect key="frame" x="13" y="70" width="349" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="DVe-gV-A79"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="textDidChange:" destination="vGc-dR-uZD" eventType="editingChanged" id="FYd-2D-mGY"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dkj-Vw-SGP">
+                                <rect key="frame" x="13" y="132" width="349" height="85"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="85" id="1GG-BH-gvZ"/>
+                                </constraints>
+                                <string key="text">- 닉네임은 2자 이상 10자 이하의 한글,영문,숫자 조합으로 설정 가능합니다. (특수문자 사용불가)
+- 닉네임은 변경 시 3개월 이후 재변경이 가능합니다.
+- 적절하지 못한 언어 사용 시, 강제로 변경조치 될 수 있습니다.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="76Z-qi-mQq">
+                                <rect key="frame" x="13" y="237" width="349" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.72941176470000002" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="vzW-Wn-kDb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="확인">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="onAccBtn:" destination="vGc-dR-uZD" eventType="touchUpInside" id="4Xo-We-Mfu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9hv-4Q-MIk"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4rJ-E5-Dzf" firstAttribute="leading" secondItem="9hv-4Q-MIk" secondAttribute="leading" constant="13" id="LmN-gz-uwh"/>
+                            <constraint firstItem="76Z-qi-mQq" firstAttribute="top" secondItem="dkj-Vw-SGP" secondAttribute="bottom" constant="20" id="cxV-X5-DV8"/>
+                            <constraint firstItem="9hv-4Q-MIk" firstAttribute="trailing" secondItem="dkj-Vw-SGP" secondAttribute="trailing" constant="13" id="dzU-nd-hPp"/>
+                            <constraint firstItem="9hv-4Q-MIk" firstAttribute="trailing" secondItem="4rJ-E5-Dzf" secondAttribute="trailing" constant="13" id="f3j-VR-jPc"/>
+                            <constraint firstItem="dkj-Vw-SGP" firstAttribute="leading" secondItem="9hv-4Q-MIk" secondAttribute="leading" constant="13" id="jpX-3v-D8c"/>
+                            <constraint firstItem="dkj-Vw-SGP" firstAttribute="top" secondItem="4rJ-E5-Dzf" secondAttribute="bottom" constant="12" id="km6-Bn-RUS"/>
+                            <constraint firstItem="4rJ-E5-Dzf" firstAttribute="top" secondItem="9hv-4Q-MIk" secondAttribute="top" constant="26" id="qYx-hR-TeQ"/>
+                            <constraint firstItem="9hv-4Q-MIk" firstAttribute="trailing" secondItem="76Z-qi-mQq" secondAttribute="trailing" constant="13" id="wnz-CA-weX"/>
+                            <constraint firstItem="76Z-qi-mQq" firstAttribute="leading" secondItem="9hv-4Q-MIk" secondAttribute="leading" constant="13" id="zky-g2-4eF"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="b8n-Fq-GDW"/>
+                    <connections>
+                        <outlet property="uiAccBtn" destination="76Z-qi-mQq" id="1C1-8q-HIw"/>
+                        <outlet property="uiCodeInput" destination="4rJ-E5-Dzf" id="IBq-Vi-lSq"/>
+                        <outlet property="uiHelplb" destination="dkj-Vw-SGP" id="LSH-yt-pVe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yL2-wZ-bfc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="892" y="148.87556221889056"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="NG6-co-eVw">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hQf-aF-reI" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="v6a-T8-i0f">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vGc-dR-uZD" kind="relationship" relationship="rootViewController" id="uvM-uK-067"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TdF-t2-JAi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-47.200000000000003" y="148.87556221889056"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

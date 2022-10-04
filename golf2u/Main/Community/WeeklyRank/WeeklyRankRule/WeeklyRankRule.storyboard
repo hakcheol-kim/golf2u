@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Weekly Rank Rule-->
+        <scene sceneID="H0a-2F-w6O">
+            <objects>
+                <viewController storyboardIdentifier="weeklyrankruleidx" hidesBottomBarWhenPushed="YES" id="Hd9-jt-AGr" customClass="WeeklyRankRule" customModule="golf2u" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="E5v-bM-u8e">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="900"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ctf-Za-UFd">
+                                <rect key="frame" x="0.0" y="44" width="375" height="856"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jlr-QK-U3d">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="856"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="community_rank_rule.png" translatesAutoresizingMaskIntoConstraints="NO" id="HhD-6T-SPw">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="856"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="HhD-6T-SPw" firstAttribute="leading" secondItem="Jlr-QK-U3d" secondAttribute="leading" id="M0r-Dk-QD0"/>
+                                            <constraint firstAttribute="trailing" secondItem="HhD-6T-SPw" secondAttribute="trailing" id="Rcf-Rg-lgI"/>
+                                            <constraint firstAttribute="bottom" secondItem="HhD-6T-SPw" secondAttribute="bottom" id="X1j-mh-XSu"/>
+                                            <constraint firstItem="HhD-6T-SPw" firstAttribute="top" secondItem="Jlr-QK-U3d" secondAttribute="top" id="bH4-vX-eYf"/>
+                                            <constraint firstAttribute="height" constant="856" id="yrc-8R-YQw"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Jlr-QK-U3d" secondAttribute="bottom" id="5QQ-WX-w4y"/>
+                                    <constraint firstItem="Jlr-QK-U3d" firstAttribute="leading" secondItem="Ctf-Za-UFd" secondAttribute="leading" id="DL7-dq-Qcq"/>
+                                    <constraint firstItem="Jlr-QK-U3d" firstAttribute="top" secondItem="Ctf-Za-UFd" secondAttribute="top" id="Tnv-1P-wcf"/>
+                                    <constraint firstAttribute="trailing" secondItem="Jlr-QK-U3d" secondAttribute="trailing" id="kgc-9Q-3au"/>
+                                    <constraint firstItem="Jlr-QK-U3d" firstAttribute="width" secondItem="Ctf-Za-UFd" secondAttribute="width" id="sZs-sC-6Tv"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="OJh-Yj-Vg2"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ctf-Za-UFd" firstAttribute="trailing" secondItem="OJh-Yj-Vg2" secondAttribute="trailing" id="4wJ-fz-DUz"/>
+                            <constraint firstItem="Ctf-Za-UFd" firstAttribute="leading" secondItem="OJh-Yj-Vg2" secondAttribute="leading" id="IFt-C1-zgO"/>
+                            <constraint firstItem="Ctf-Za-UFd" firstAttribute="bottom" secondItem="E5v-bM-u8e" secondAttribute="bottom" id="OvY-QK-qpf"/>
+                            <constraint firstItem="Ctf-Za-UFd" firstAttribute="top" secondItem="OJh-Yj-Vg2" secondAttribute="top" id="Pwx-GP-16A"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="MUh-oH-Ts1"/>
+                    <size key="freeformSize" width="375" height="900"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eIS-Lr-LQg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="837.60000000000002" y="111.54422788605699"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="sa5-i2-jae">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cSR-pM-RDY" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="CKK-9q-U5X">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Hd9-jt-AGr" kind="relationship" relationship="rootViewController" id="pSH-fO-9RD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I7v-Uq-AL2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-93.599999999999994" y="112.89355322338831"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="community_rank_rule.png" width="1440" height="3243"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

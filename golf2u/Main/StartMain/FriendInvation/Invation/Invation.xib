@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Invation" customModule="golf2u" customModuleProvider="target">
+            <connections>
+                <outlet property="uiCodeBtnPre" destination="7dA-PL-bPY" id="TCW-Dv-shH"/>
+                <outlet property="uiCodeBtnRPre" destination="2Lh-ks-0tB" id="GIq-Ok-3ck"/>
+                <outlet property="uiCodeCopyBtn" destination="iaC-DD-3WB" id="t2Z-Ik-3c0"/>
+                <outlet property="uiHelplb" destination="zC1-MU-H9V" id="eed-gi-G5o"/>
+                <outlet property="uiKakaoBtn" destination="8xY-Dm-v4l" id="pWn-7R-pYe"/>
+                <outlet property="uiSmsBtn" destination="LrB-Ly-pHe" id="c7G-1U-0bW"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7dA-PL-bPY">
+                    <rect key="frame" x="13" y="20" width="259" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Wqc-Nw-Gxg"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="코드를 생성해주세요.">
+                        <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Lh-ks-0tB">
+                    <rect key="frame" x="259" y="20" width="103" height="50"/>
+                    <color key="backgroundColor" red="0.0" green="0.72941176470000002" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Rfe-pG-ykq"/>
+                        <constraint firstAttribute="width" constant="103" id="imb-Iz-X6n"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" title="코드 생성">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="onCodeCreateBtn:" destination="-1" eventType="touchUpInside" id="Rg9-W0-2bo"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zC1-MU-H9V">
+                    <rect key="frame" x="13" y="218" width="349" height="149"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="149" id="Wac-dl-sN4"/>
+                    </constraints>
+                    <string key="text">초대한 회원 혜택  
+- 친구가 초대코드를 입력하면 500클로버가 지급됩니다.  
+- 초대할 수 있는 친구의 수는 제한이 없습니다.
+ 초대받은 친구 혜택  
+- 회원 가입 후 초대 코드를 입력하면 1000클로버가 지급됩니다.  
+주의사항  
+- 본 이벤트는 로그인(휴대폰 인증) 후 참여하실 수 있습니다.  
+- 본 이벤트는 조기 종료되거나 사전 예고 없이 변경될 수 
+ 있습니다.</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iaC-DD-3WB">
+                    <rect key="frame" x="13" y="100" width="349" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="a5S-Xy-7ut"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="코드 복사하기">
+                        <color key="titleColor" red="0.0" green="0.72941176470000002" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="onCopyBtn:" destination="-1" eventType="touchUpInside" id="tJ3-y1-Q38"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8xY-Dm-v4l">
+                    <rect key="frame" x="13" y="158" width="168" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="168" id="96S-pV-feC"/>
+                        <constraint firstAttribute="height" constant="50" id="YtQ-xw-DA9"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="카카오톡 전송하기">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="onKakaoShare:" destination="-1" eventType="touchUpInside" id="yjY-Yd-1ax"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LrB-Ly-pHe">
+                    <rect key="frame" x="194" y="158" width="168" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="S0v-bL-qN8"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="SMS 전송하기">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="onSmsShare:" destination="-1" eventType="touchUpInside" id="EUg-MS-pVw"/>
+                    </connections>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="inven_kakao.png" translatesAutoresizingMaskIntoConstraints="NO" id="gtV-kv-M8B">
+                    <rect key="frame" x="24" y="173" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="5xQ-iV-rtu"/>
+                        <constraint firstAttribute="width" constant="20" id="Rff-HL-ptr"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sms.png" translatesAutoresizingMaskIntoConstraints="NO" id="uR2-tM-Ggl">
+                    <rect key="frame" x="215" y="173" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="aaV-Qh-Dqr"/>
+                        <constraint firstAttribute="height" constant="20" id="xFu-1N-Pe9"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="uR2-tM-Ggl" firstAttribute="top" secondItem="iaC-DD-3WB" secondAttribute="bottom" constant="23" id="01D-HN-v6f"/>
+                <constraint firstItem="7dA-PL-bPY" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="13" id="AVv-4h-Zhe"/>
+                <constraint firstItem="8xY-Dm-v4l" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="13" id="B7f-WZ-wOS"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="LrB-Ly-pHe" secondAttribute="trailing" constant="13" id="Bib-KW-4tB"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="iaC-DD-3WB" secondAttribute="trailing" constant="13" id="Nfk-Mp-M04"/>
+                <constraint firstItem="LrB-Ly-pHe" firstAttribute="leading" secondItem="8xY-Dm-v4l" secondAttribute="trailing" constant="13" id="RCR-f3-nqm"/>
+                <constraint firstItem="gtV-kv-M8B" firstAttribute="top" secondItem="iaC-DD-3WB" secondAttribute="bottom" constant="23" id="YqO-mT-hF4"/>
+                <constraint firstItem="8xY-Dm-v4l" firstAttribute="width" secondItem="LrB-Ly-pHe" secondAttribute="width" id="a1r-dW-vzy"/>
+                <constraint firstItem="7dA-PL-bPY" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="b36-FE-lwI"/>
+                <constraint firstItem="2Lh-ks-0tB" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="daa-MZ-YqU"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="2Lh-ks-0tB" secondAttribute="trailing" constant="13" id="etz-Zb-NdL"/>
+                <constraint firstItem="iaC-DD-3WB" firstAttribute="top" secondItem="7dA-PL-bPY" secondAttribute="bottom" constant="30" id="gCi-Bf-Smu"/>
+                <constraint firstItem="gtV-kv-M8B" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="24" id="hDf-hL-JhK"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="7dA-PL-bPY" secondAttribute="trailing" constant="103" id="hVv-IU-iPj"/>
+                <constraint firstItem="LrB-Ly-pHe" firstAttribute="top" secondItem="iaC-DD-3WB" secondAttribute="bottom" constant="8" symbolic="YES" id="kVr-y7-mA9"/>
+                <constraint firstItem="zC1-MU-H9V" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="13" id="o7Q-mN-gPc"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="zC1-MU-H9V" secondAttribute="trailing" constant="13" id="onE-ik-eka"/>
+                <constraint firstItem="8xY-Dm-v4l" firstAttribute="top" secondItem="iaC-DD-3WB" secondAttribute="bottom" constant="8" symbolic="YES" id="qnh-FX-StE"/>
+                <constraint firstItem="iaC-DD-3WB" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="13" id="ubq-DG-Yi6"/>
+                <constraint firstItem="uR2-tM-Ggl" firstAttribute="leading" secondItem="8xY-Dm-v4l" secondAttribute="trailing" constant="34" id="udD-mJ-2r4"/>
+                <constraint firstItem="zC1-MU-H9V" firstAttribute="top" secondItem="8xY-Dm-v4l" secondAttribute="bottom" constant="10" id="zBW-t8-Rj1"/>
+            </constraints>
+            <point key="canvasLocation" x="30" y="100"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="inven_kakao.png" width="100" height="100"/>
+        <image name="sms.png" width="100" height="100"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

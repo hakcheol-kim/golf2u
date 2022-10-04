@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="BoxBuy_Step7idx" id="gTV-IL-0wX" customClass="BoxBuy_Step7" customModule="golf2u" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="61"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="61"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bRJ-tZ-zW4" customClass="CircleCheckBoxBtn" customModule="golf2u" customModuleProvider="target">
+                        <rect key="frame" x="13" y="18" width="21" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="21" id="mVr-zj-PXj"/>
+                            <constraint firstAttribute="height" constant="21" id="r7t-AY-Oe9"/>
+                        </constraints>
+                        <color key="tintColor" red="0.0" green="0.72941176470000002" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <state key="normal" image="check_circle_blank.png">
+                            <color key="titleColor" red="0.0" green="0.72941176470000002" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="onCheck:" destination="gTV-IL-0wX" eventType="touchUpInside" id="xk9-8z-RCV"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="구매 조건 확인 및 결제 진행 동의" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tEo-N6-To3">
+                        <rect key="frame" x="42" y="18" width="313" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="313" id="8SU-KE-bAY"/>
+                            <constraint firstAttribute="height" constant="21" id="Ma7-mm-MJ9"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="tEo-N6-To3" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="18" id="5AV-Ib-BQc"/>
+                <constraint firstItem="bRJ-tZ-zW4" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="13" id="KZg-UK-umm"/>
+                <constraint firstItem="bRJ-tZ-zW4" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="18" id="ZF2-Sv-B1m"/>
+                <constraint firstItem="tEo-N6-To3" firstAttribute="leading" secondItem="bRJ-tZ-zW4" secondAttribute="trailing" constant="8" id="xNi-9o-80y"/>
+            </constraints>
+            <size key="customSize" width="375" height="61"/>
+            <connections>
+                <outlet property="uiCheck" destination="bRJ-tZ-zW4" id="QcQ-cU-Qxe"/>
+                <outlet property="uilb1" destination="tEo-N6-To3" id="tAV-IP-Uyc"/>
+            </connections>
+            <point key="canvasLocation" x="136.95652173913044" y="47.879464285714285"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="check_circle_blank.png" width="60" height="60"/>
+    </resources>
+</document>

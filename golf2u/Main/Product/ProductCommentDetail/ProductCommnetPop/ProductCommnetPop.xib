@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProductCommnetPop" customModule="random2u" customModuleProvider="target">
+            <connections>
+                <outlet property="uiContentInput" destination="KWn-u4-2tU" id="BzY-0b-w3w"/>
+                <outlet property="uiImageFile1" destination="mJW-cM-54d" id="Nls-08-VYA"/>
+                <outlet property="uiImageFile2" destination="oM0-yU-tkd" id="Pws-rp-Fsa"/>
+                <outlet property="view" destination="iN0-l3-epB" id="wX8-bZ-rIS"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="146"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="상품 후기를 등록해보세요." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KWn-u4-2tU">
+                    <rect key="frame" x="13" y="81" width="273" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="f8V-X0-Y4R"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mJW-cM-54d">
+                    <rect key="frame" x="13" y="10" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="Ere-qU-FtD"/>
+                        <constraint firstAttribute="height" constant="60" id="yzk-CE-hXm"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oM0-yU-tkd">
+                    <rect key="frame" x="81" y="10" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="HsH-Vh-u0J"/>
+                        <constraint firstAttribute="height" constant="60" id="LQh-r0-kFK"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1cL-lw-5oT">
+                    <rect key="frame" x="342" y="95" width="20" height="16"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="16" id="m2B-oT-whw"/>
+                        <constraint firstAttribute="width" constant="20" id="rek-2U-WZx"/>
+                    </constraints>
+                    <state key="normal" image="Camera.png"/>
+                    <connections>
+                        <action selector="onCameraBtn:" destination="-1" eventType="touchUpInside" id="1xz-RT-6re"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Siq-aa-GkN">
+                    <rect key="frame" x="304" y="95" width="20" height="16"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="BrZ-tP-Mrw"/>
+                        <constraint firstAttribute="height" constant="16" id="Q0v-lz-zxY"/>
+                    </constraints>
+                    <state key="normal" image="Album.png"/>
+                    <connections>
+                        <action selector="onPicBtn:" destination="-1" eventType="touchUpInside" id="QyS-Nl-joa"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="mJW-cM-54d" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="2Fn-dV-F9O"/>
+                <constraint firstItem="1cL-lw-5oT" firstAttribute="leading" secondItem="Siq-aa-GkN" secondAttribute="trailing" constant="18" id="4NC-rm-zdT"/>
+                <constraint firstItem="Siq-aa-GkN" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="95" id="Akl-Gj-hTz"/>
+                <constraint firstItem="1cL-lw-5oT" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="95" id="DrD-oG-5xC"/>
+                <constraint firstItem="Siq-aa-GkN" firstAttribute="leading" secondItem="KWn-u4-2tU" secondAttribute="trailing" constant="18" id="KTv-yg-vTa"/>
+                <constraint firstItem="KWn-u4-2tU" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="13" id="MXG-Oh-rcJ"/>
+                <constraint firstItem="mJW-cM-54d" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="13" id="R6x-uH-zgJ"/>
+                <constraint firstItem="oM0-yU-tkd" firstAttribute="leading" secondItem="mJW-cM-54d" secondAttribute="trailing" constant="8" symbolic="YES" id="hWq-6N-uUG"/>
+                <constraint firstItem="KWn-u4-2tU" firstAttribute="top" secondItem="mJW-cM-54d" secondAttribute="bottom" constant="11" id="iE3-pd-Xkb"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="1cL-lw-5oT" secondAttribute="trailing" constant="13" id="ovD-sh-Bfr"/>
+                <constraint firstItem="oM0-yU-tkd" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="sdF-Cf-NJ8"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="141.59999999999999" y="331.0344827586207"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Album.png" width="90" height="72"/>
+        <image name="Camera.png" width="90" height="71"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

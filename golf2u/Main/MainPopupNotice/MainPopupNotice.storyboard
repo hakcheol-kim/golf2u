@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main Popup Notice-->
+        <scene sceneID="De6-gi-Naq">
+            <objects>
+                <viewController storyboardIdentifier="MainPopupNotice" id="gYd-Jz-xUc" customClass="MainPopupNotice" customModule="golf2u" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fPW-G9-1RY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ikM-jo-POn" customClass="InfiniteViewSlider" customModule="InfiniteViewSlider">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="617"/>
+                                <subviews>
+                                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" hidesForSinglePage="YES" numberOfPages="100" translatesAutoresizingMaskIntoConstraints="NO" id="OOm-tb-AYf">
+                                        <rect key="frame" x="8" y="568" width="359" height="28"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="28" id="kKv-qX-BJZ"/>
+                                        </constraints>
+                                    </pageControl>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="OOm-tb-AYf" secondAttribute="trailing" constant="8" id="1BD-qY-VkV"/>
+                                    <constraint firstItem="OOm-tb-AYf" firstAttribute="leading" secondItem="ikM-jo-POn" secondAttribute="leading" constant="8" id="GP5-RA-ISy"/>
+                                    <constraint firstAttribute="bottom" secondItem="OOm-tb-AYf" secondAttribute="bottom" constant="21" id="H1y-zK-aft"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DQj-zY-Mnv">
+                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4te-1K-z9Z">
+                                        <rect key="frame" x="0.0" y="1" width="187" height="49"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="49" id="DkR-za-TOh"/>
+                                            <constraint firstAttribute="width" constant="187" id="eip-aL-ozv"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="오늘 그만 보기">
+                                            <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onDayBtn:" destination="gYd-Jz-xUc" eventType="touchUpInside" id="r4s-61-K8K"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7JB-79-qOr">
+                                        <rect key="frame" x="188" y="1" width="187" height="49"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="49" id="hs8-Xk-smI"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="확인">
+                                            <color key="titleColor" red="0.0" green="0.72941176470000002" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onAccBtn:" destination="gYd-Jz-xUc" eventType="touchUpInside" id="u3b-29-FdE"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="4te-1K-z9Z" firstAttribute="width" secondItem="7JB-79-qOr" secondAttribute="width" id="7kE-jX-3hi"/>
+                                    <constraint firstItem="7JB-79-qOr" firstAttribute="top" secondItem="DQj-zY-Mnv" secondAttribute="top" constant="1" id="AVX-YD-HuD"/>
+                                    <constraint firstItem="4te-1K-z9Z" firstAttribute="top" secondItem="DQj-zY-Mnv" secondAttribute="top" constant="1" id="DnN-fd-exo"/>
+                                    <constraint firstAttribute="trailing" secondItem="7JB-79-qOr" secondAttribute="trailing" id="J3x-Ag-zgO"/>
+                                    <constraint firstItem="7JB-79-qOr" firstAttribute="leading" secondItem="4te-1K-z9Z" secondAttribute="trailing" constant="1" id="JHh-nX-vy9"/>
+                                    <constraint firstAttribute="height" constant="50" id="qio-PW-oUM"/>
+                                    <constraint firstItem="4te-1K-z9Z" firstAttribute="leading" secondItem="DQj-zY-Mnv" secondAttribute="leading" id="vmj-Dy-pcU"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="GTW-cy-5vj"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ikM-jo-POn" firstAttribute="trailing" secondItem="GTW-cy-5vj" secondAttribute="trailing" id="Coo-6t-Z7n"/>
+                            <constraint firstItem="DQj-zY-Mnv" firstAttribute="trailing" secondItem="GTW-cy-5vj" secondAttribute="trailing" id="YZv-Zc-ug2"/>
+                            <constraint firstItem="ikM-jo-POn" firstAttribute="top" secondItem="GTW-cy-5vj" secondAttribute="top" id="e8s-tD-jvm"/>
+                            <constraint firstItem="DQj-zY-Mnv" firstAttribute="top" secondItem="ikM-jo-POn" secondAttribute="bottom" id="gTe-1q-ank"/>
+                            <constraint firstItem="ikM-jo-POn" firstAttribute="leading" secondItem="GTW-cy-5vj" secondAttribute="leading" id="gxt-fb-B4O"/>
+                            <constraint firstItem="DQj-zY-Mnv" firstAttribute="bottom" secondItem="GTW-cy-5vj" secondAttribute="bottom" id="k19-EX-d4O"/>
+                            <constraint firstItem="DQj-zY-Mnv" firstAttribute="leading" secondItem="GTW-cy-5vj" secondAttribute="leading" id="rkf-zy-cLO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="uiAccBtn" destination="7JB-79-qOr" id="DCb-Or-g9e"/>
+                        <outlet property="uiNotTodayBtn" destination="4te-1K-z9Z" id="0hN-Fo-J95"/>
+                        <outlet property="uiSliderView" destination="ikM-jo-POn" id="vsR-xA-HxO"/>
+                        <outlet property="uiViewPageCon" destination="OOm-tb-AYf" id="EMy-i3-FUQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vE4-Xe-AIA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-63.200000000000003" y="121.88905547226388"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

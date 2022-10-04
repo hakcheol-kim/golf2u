@@ -1,0 +1,119 @@
+PODS:
+  - AdvancedPageControl (0.9.0)
+  - AppAuth (1.6.0):
+    - AppAuth/Core (= 1.6.0)
+    - AppAuth/ExternalUserAgent (= 1.6.0)
+  - AppAuth/Core (1.6.0)
+  - AppAuth/ExternalUserAgent (1.6.0):
+    - AppAuth/Core
+  - AppsFlyerFramework (6.8.1):
+    - AppsFlyerFramework/Main (= 6.8.1)
+  - AppsFlyerFramework/Main (6.8.1)
+  - DownPickerSwift (1.1.2):
+    - DownPickerSwift/Core (= 1.1.2)
+  - DownPickerSwift/Core (1.1.2)
+  - EzPopup (1.2.4)
+  - GoogleSignIn (5.0.2):
+    - AppAuth (~> 1.2)
+    - GTMAppAuth (~> 1.0)
+    - GTMSessionFetcher/Core (~> 1.1)
+  - GTMAppAuth (1.3.1):
+    - AppAuth/Core (~> 1.6)
+    - GTMSessionFetcher/Core (< 3.0, >= 1.5)
+  - GTMSessionFetcher/Core (1.7.2)
+  - ImageSlideshow (1.9.2):
+    - ImageSlideshow/Core (= 1.9.2)
+  - ImageSlideshow/Core (1.9.2)
+  - ImageSlideshow/Kingfisher (1.9.2):
+    - ImageSlideshow/Core
+    - Kingfisher (> 3.0)
+  - InfiniteViewSlider (0.0.2)
+  - Kingfisher (5.15.8):
+    - Kingfisher/Core (= 5.15.8)
+  - Kingfisher/Core (5.15.8)
+  - MarqueeLabel (4.3.0)
+  - NBBottomSheet (1.2.0)
+  - PryntTrimmerView (4.0.2)
+  - RangeSeekSlider (1.8.0)
+  - SideMenu (6.5.0)
+  - SteviaLayout (4.7.3)
+  - SwiftyJSON (4.3.0)
+  - SwipeCellKit (2.7.1)
+  - TAKUUID (1.5.0)
+  - Toast-Swift (5.0.1)
+  - YPImagePicker (5.2.1):
+    - PryntTrimmerView (= 4.0.2)
+    - SteviaLayout (= 4.7.3)
+
+DEPENDENCIES:
+  - AdvancedPageControl (~> 0.9.0)
+  - AppsFlyerFramework
+  - DownPickerSwift (~> 1.1.1)
+  - EzPopup (~> 1.2.3)
+  - GoogleSignIn (~> 5.0.2)
+  - ImageSlideshow (~> 1.9.0)
+  - ImageSlideshow/Kingfisher (~> 1.9.2)
+  - InfiniteViewSlider (~> 0.0.2)
+  - Kingfisher (~> 5.0)
+  - MarqueeLabel (~> 4.3.0)
+  - NBBottomSheet (~> 1.2)
+  - RangeSeekSlider (~> 1.8.0)
+  - SideMenu (~> 6.5.0)
+  - SwiftyJSON (~> 4.0)
+  - SwipeCellKit (~> 2.7.1)
+  - TAKUUID (~> 1.5.0)
+  - Toast-Swift (~> 5.0.1)
+  - YPImagePicker (~> 5.2.1)
+
+SPEC REPOS:
+  trunk:
+    - AdvancedPageControl
+    - AppAuth
+    - AppsFlyerFramework
+    - DownPickerSwift
+    - EzPopup
+    - GoogleSignIn
+    - GTMAppAuth
+    - GTMSessionFetcher
+    - ImageSlideshow
+    - InfiniteViewSlider
+    - Kingfisher
+    - MarqueeLabel
+    - NBBottomSheet
+    - PryntTrimmerView
+    - RangeSeekSlider
+    - SideMenu
+    - SteviaLayout
+    - SwiftyJSON
+    - SwipeCellKit
+    - TAKUUID
+    - Toast-Swift
+    - YPImagePicker
+
+SPEC CHECKSUMS:
+  AdvancedPageControl: 39e3b32b00b2d324c534f8e17cc6c5be9abe84b7
+  AppAuth: 8fca6b5563a5baef2c04bee27538025e4ceb2add
+  AppsFlyerFramework: a664325124485223296354b4eec335f5340a6df8
+  DownPickerSwift: 3d76c73a86fd2984b8f4add53901a655f036fd5c
+  EzPopup: 37f2c40e8ce50412a269bfba365baa7085c28002
+  GoogleSignIn: 7137d297ddc022a7e0aa4619c86d72c909fa7213
+  GTMAppAuth: 0ff230db599948a9ad7470ca667337803b3fc4dd
+  GTMSessionFetcher: 5595ec75acf5be50814f81e9189490412bad82ba
+  ImageSlideshow: be305b54eaf2b2cfc7a7141c7c734605d44dc07d
+  InfiniteViewSlider: 9fd5cd32fbf6b449152db9c45ba012073352b861
+  Kingfisher: a3c03d702433fa6cfedabb2bddbe076fb8f2e902
+  MarqueeLabel: 02f5ac8fd6877c94564556cb93fa86c70c08baeb
+  NBBottomSheet: aa7a52809b2d7b193f733247b8ce391a59904372
+  PryntTrimmerView: 6a43cc90df5d99addeabd33d4ba09b1365322130
+  RangeSeekSlider: 650b11fa1edcb92e1e0ede797669d98622570fb5
+  SideMenu: f583187d21c5b1dd04c72002be544b555a2627a2
+  SteviaLayout: c2ecdcff57d44e38fd2f65e54ad52aeae28ca0c4
+  SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
+  SwipeCellKit: 3972254a826da74609926daf59b08d6c72e619ea
+  TAKUUID: 48d7c690d85a27e7beb79b099349f1cf0d60c928
+  Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
+  YPImagePicker: f36043210c10b0783034eb1947d6e06e31c461e4
+
+PODFILE CHECKSUM: 95c68a5400571c611d3d7b432480ffae41ab244d
+
+COCOAPODS: 1.11.3

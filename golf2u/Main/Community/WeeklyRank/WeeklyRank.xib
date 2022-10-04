@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WeeklyRank" customModule="golf2u" customModuleProvider="target">
+            <connections>
+                <outlet property="uiCollectionVIew" destination="pKP-zL-EX3" id="rDB-oQ-5Gy"/>
+                <outlet property="uiPreBorderBtn" destination="Q4V-10-fwn" id="Th0-p3-K6J"/>
+                <outlet property="uiPreBtn" destination="Q4V-10-fwn" id="cTz-b0-13v"/>
+                <outlet property="uiRuleBtn" destination="8CJ-dA-dLh" id="FAp-29-kjX"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="pKP-zL-EX3">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="617"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="l8C-Ak-3Wi">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s7R-ae-qt8">
+                    <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8CJ-dA-dLh">
+                            <rect key="frame" x="188" y="0.0" width="187" height="50"/>
+                            <color key="backgroundColor" red="0.0" green="0.72941176470000002" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="fEj-vb-yMy"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                            <state key="normal" title="랭킹전 규칙">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="onNoticeBtn:" destination="-1" eventType="touchUpInside" id="yAa-TE-NTl"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q4V-10-fwn">
+                            <rect key="frame" x="0.0" y="0.0" width="187" height="50"/>
+                            <color key="backgroundColor" red="0.0" green="0.72941176470000002" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="1Ef-w3-DUo"/>
+                                <constraint firstAttribute="width" constant="187" id="2BZ-31-a1V"/>
+                            </constraints>
+                            <state key="normal" title="이전 랭킹전 보기">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="onWeekRankBtn:" destination="-1" eventType="touchUpInside" id="h7U-sE-Gjs"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="Q4V-10-fwn" firstAttribute="width" secondItem="8CJ-dA-dLh" secondAttribute="width" id="Mu2-IN-yW4"/>
+                        <constraint firstItem="Q4V-10-fwn" firstAttribute="leading" secondItem="s7R-ae-qt8" secondAttribute="leading" id="Own-3J-cNA"/>
+                        <constraint firstAttribute="height" constant="50" id="SZl-fF-wk1"/>
+                        <constraint firstAttribute="trailing" secondItem="8CJ-dA-dLh" secondAttribute="trailing" id="Uk3-hJ-wYz"/>
+                        <constraint firstItem="8CJ-dA-dLh" firstAttribute="top" secondItem="s7R-ae-qt8" secondAttribute="top" id="YJj-hi-V05"/>
+                        <constraint firstItem="Q4V-10-fwn" firstAttribute="top" secondItem="s7R-ae-qt8" secondAttribute="top" id="ebc-gW-EKe"/>
+                        <constraint firstItem="8CJ-dA-dLh" firstAttribute="leading" secondItem="Q4V-10-fwn" secondAttribute="trailing" constant="1" id="eca-Na-0qo"/>
+                        <constraint firstItem="8CJ-dA-dLh" firstAttribute="leading" secondItem="Q4V-10-fwn" secondAttribute="trailing" constant="1" id="n4b-DO-Sdt"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="s7R-ae-qt8" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="4Da-8u-2ul"/>
+                <constraint firstItem="pKP-zL-EX3" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="4X4-un-qpY"/>
+                <constraint firstItem="s7R-ae-qt8" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="G6B-JM-XXc"/>
+                <constraint firstItem="s7R-ae-qt8" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="TND-Ba-fyn"/>
+                <constraint firstItem="s7R-ae-qt8" firstAttribute="top" secondItem="pKP-zL-EX3" secondAttribute="bottom" id="ZGx-UX-Uoz"/>
+                <constraint firstItem="pKP-zL-EX3" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="uV9-um-rGu"/>
+                <constraint firstItem="pKP-zL-EX3" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="v2e-8W-VYQ"/>
+            </constraints>
+            <point key="canvasLocation" x="140" y="99.400299850074973"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
