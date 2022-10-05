@@ -18,7 +18,7 @@ class FriendInvation: VariousViewController {
     private var SO:Single = Single.getSO();
     private let JS = JsonC();
     
-    private var m_nSelMenu = 0;
+    var m_nSelMenu = 0;
     
     @IBOutlet weak var uiTopTabView: ReportCustomSegmentedControl!{
         didSet{
@@ -43,11 +43,21 @@ class FriendInvation: VariousViewController {
         
         uiContentsView.layer.addBorder([.top], color: UIColor(rgb: 0xe4e4e4), width: 1.0)
         
-        m_tIV = Invation(frame: self.uiContentsView.bounds)
-        m_tIV?.m_tClickEvent = self;
-        m_tCI = CodeInput(frame: self.uiContentsView.bounds)
-        m_tCI?.m_tClickEvent = self;
-        setContentsView(uiView: m_tIV!)
+        view.layoutIfNeeded()
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now()+0.2) {
+            if self.m_nSelMenu == 0 {
+                //            m_tIV = Invation(frame: self.uiContentsView.bounds)
+                //            m_tIV?.m_tClickEvent = self
+                //            setContentsView(uiView: m_tIV!)
+                self.uiTopTabView.setIndex(index: 0)
+            }
+            else {
+                //            m_tCI = CodeInput(frame: self.uiContentsView.bounds)
+                //            m_tCI?.m_tClickEvent = self
+                //            setContentsView(uiView: m_tCI!)
+                self.uiTopTabView.setIndex(index: 1)
+            }
+        }
     }
     
 
@@ -63,21 +73,23 @@ class FriendInvation: VariousViewController {
 }
 extension FriendInvation : ReportCustomSegmentedControlDelegate{
     func changeToIndex(index: Int) {
-        if m_nSelMenu == index{
-            return;
-        }
+        
         m_nSelMenu = index;
         for v in uiContentsView.subviews{
             v.removeFromSuperview()
         }
         if m_nSelMenu == 0 {
             uiBottomCoverView.backgroundColor = UIColor.white
-            setContentsView(uiView: m_tIV!);
-        }else if m_nSelMenu == 1 {
-            uiBottomCoverView.backgroundColor = UIColor(rgb: 0xF47C73)
-            setContentsView(uiView: m_tCI!);
+            m_tIV = Invation(frame: self.uiContentsView.bounds)
+            m_tIV?.m_tClickEvent = self
+            setContentsView(uiView: m_tIV!)
         }
-        
+        else {
+            uiBottomCoverView.backgroundColor = UIColor.init(rgb: 0x00BA87)
+            m_tCI = CodeInput(frame: self.uiContentsView.bounds)
+            m_tCI?.m_tClickEvent = self
+            setContentsView(uiView: m_tCI!)
+        }
     }
 }
 
@@ -91,7 +103,7 @@ extension FriendInvation: FriendInvationDelegate {
         else if type == 2 {
             //카카오 공유
             //let text = "랜덤투유\\n친구초대코드 :".localized(txt: "\(data["code"] ?? "")")
-            let text = "홀인원보다 짜릿한 랜덤쇼핑!\n만원의 행복 골프투유 입니다.\n코드를 복사하여 입력하면 1천원 할인 쿠폰이 지급됩니다.\n\n친구 초대코드 : \(data["code"] ?? "")"
+            let text = "만원으로 쇼핑 홀인원!\n골프투유 초대장이 도착했어요.\n\n친구 초대코드 : \(data["code"] ?? "")"
             self.KakaoShare(text : text, btnname: "코드 입력하러 가기", imgurl: "https://r2u-image-storage-staging.s3.ap-northeast-2.amazonaws.com/images/default/profile/ic_kakao.png")
         }else if type == 3 {
             //sms 공유

@@ -11,6 +11,7 @@ import KakaoSDKAuth
 import FBSDKLoginKit
 import GoogleSignIn
 import AppsFlyerLib
+import FirebaseDynamicLinks
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -38,19 +39,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
           self.scene(scene, openURLContexts: connectionOptions.urlContexts)
         }
     }
-    func scene(_ scene: UIScene, continue userActivity: NSUserActivity) {
-        AppsFlyerLib.shared().continue(userActivity, restorationHandler: nil)
-//      guard userActivity.activityType == NSUserActivityTypeBrowsingWeb,
-//        let urlToOpen = userActivity.webpageURL else {
-//          return
-//      }
-    }
+    
     func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
         //print("ergerg : ",URLContexts.first?.url);
         //앱이 실행시 넘어오는 스키마 를 판단하여 이전에 어디서온 건지 구분할수있다
         
         if let url = URLContexts.first?.url {
             AppsFlyerLib.shared().handleOpen(url, options: nil)
+            print("scene openurl: \(url)")
             if (AuthApi.isKakaoTalkLoginUrl(url)) {
                 _ = AuthController.handleOpenUrl(url: url)
             }else if url.scheme!.contains("com.googleusercontent.apps") {
@@ -92,13 +88,38 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             }else if url.absoluteString == "golf2u://schemebuypdlistintent" {
                 //"랜투샵> 랜덤박스 구매하기> 랜덤박스 상품보기 *현재 당첨 가능한 상품 썸네일 노출되는 페이지"
                 SO.m_nDeepLinkType = 10
-            }else{
+            }
+            else if url.absoluteString.hasSuffix("kakaolink") {
+                SO.m_nDeepLinkType = 11
+            }
+            else{
                 ApplicationDelegate.shared.application( UIApplication.shared, open: url, sourceApplication: nil, annotation: [UIApplication.OpenURLOptionsKey.annotation] )
             }
         }
-        
     }
-    
+    func scene(_ scene: UIScene, continue userActivity: NSUserActivity) {
+        AppsFlyerLib.shared().continue(userActivity, restorationHandler: nil)
+        
+        if let incomingURL = userActivity.webpageURL {
+            print("Incoming URL is \(incomingURL)")
+            let linkHandled = DynamicLinks.dynamicLinks().handleUniversalLink(incomingURL) { dynamicLink, error in
+                guard error == nil else {
+                    print("Found an error \(error!.localizedDescription)")
+                    return
+                }
+                guard let dynamicLink = dynamicLink, let linkUrl =  dynamicLink.url else {
+                    return
+                }
+                self.parsingDynamiclink(linkUrl)
+            }
+            print(linkHandled)
+        }
+    }
+
+    func parsingDynamiclink(_ url: URL) {
+        print("dynamic link url: \(url)")
+    }
+  
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.
         // This occurs shortly after the scene enters the background, or when its session is discarded.

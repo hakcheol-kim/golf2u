@@ -634,6 +634,14 @@ class StartMain: VariousViewController{
             
             LastVController.present(popupVC, animated: true, completion: nil)
         }
+        else if type == 11 {
+            self.navigationController?.popToRootViewController(animated: false)
+            let Storyboard: UIStoryboard = UIStoryboard(name: "FriendInvation", bundle: nil)
+            let viewController = Storyboard.instantiateViewController(withIdentifier: "FriendInvationidx") as! FriendInvation
+            viewController.m_nSelMenu = 1
+            self.navigationController?.pushViewController(viewController, animated: true)
+        }
+                    
         SO.m_nDeepLinkType = 0
         SO.m_nDeepLinkSeq = "";
     }

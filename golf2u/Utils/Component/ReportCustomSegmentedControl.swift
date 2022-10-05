@@ -47,11 +47,12 @@ class ReportCustomSegmentedControl: UIView {
         buttons.forEach({ $0.setTitleColor(textColor, for: .normal) })
         let button = buttons[index]
         seletedIndex = index
-        button.setTitleColor(selectorTextColor, for: .normal)
-        let selectorPosition = frame.width/CGFloat(buttonTitles.count) * CGFloat(index)
-        UIView.animate(withDuration: 0.2) {
-            self.selectorView.frame.origin.x = selectorPosition
-        }
+        button.sendActions(for: .touchUpInside)
+//        button.setTitleColor(selectorTextColor, for: .normal)
+//        let selectorPosition = frame.width/CGFloat(buttonTitles.count) * CGFloat(index)
+//        UIView.animate(withDuration: 0.2) {
+//            self.selectorView.frame.origin.x = selectorPosition
+//        }
     }
     
     @objc func buttonAction(sender:UIButton) {

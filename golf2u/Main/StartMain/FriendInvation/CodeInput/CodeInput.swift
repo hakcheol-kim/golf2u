@@ -45,8 +45,7 @@ class CodeInput: UIView {
         uiCodeInput.placeholder = "초대코드를 입력하세요.".localized;
         
         uiAccBtn.setTitle("입력완료".localized, for: .normal)
-        
-        uiAccBtn.backgroundColor = UIColor(rgb: 0xF47C73)
+        uiAccBtn.backgroundColor = UIColor(rgb: 0x00BA87)
     }
     @IBAction func onAccBtn(_ sender: Any) {
         let Code = uiCodeInput.text!;

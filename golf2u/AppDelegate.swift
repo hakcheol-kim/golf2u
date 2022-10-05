@@ -14,6 +14,7 @@ import FBSDKCoreKit
 import Firebase
 import GoogleSignIn
 import FirebaseMessaging
+import FirebaseDynamicLinks
 import UserNotifications
 
 import AppsFlyerLib

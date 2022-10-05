@@ -23,9 +23,10 @@ class NewsRoomHeader: UICollectionReusableView {
     
     private var m_sTopBannerUrl = "";
     private var m_sStrSlider = "";
-    private var m_nLandomBanneridx = -1;
+    private var m_nLandomBanneridx = 0;
     
-    private var m_tGifBanner  = [UIImage.gif(name: "Community_newsroom_01"), UIImage.gif(name: "Community_newsroom_02"), UIImage.gif(name: "Community_newsroom_03")]
+//    private var m_tGifBanner  = [UIImage.gif(name: "Community_newsroom_01"), UIImage.gif(name: "Community_newsroom_02"), UIImage.gif(name: "Community_newsroom_03"), UIImage.gif(name: "Community_newsroom_04")]
+    private var m_tGifBanner  = [UIImage.gif(name: "Community_newsroom_04")]
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -40,15 +41,15 @@ class NewsRoomHeader: UICollectionReusableView {
         m_sStrSlider = slidertxt;
         //uiBannerIMg.kf.setImage(with: URL(string: "\(Single.DE_URLIMGSERVER)\(m_sTopBannerUrl)"))
        
-        repeat{
-            let fm_nLandomBanneridx = Int(arc4random_uniform(3));
-            if fm_nLandomBanneridx == m_nLandomBanneridx {
-                
-            }else{
-                m_nLandomBanneridx = fm_nLandomBanneridx;
-                break;
-            }
-        }while true
+//        repeat{
+////            let fm_nLandomBanneridx = Int(arc4random_uniform(4));
+////            if fm_nLandomBanneridx == m_nLandomBanneridx {
+////
+////            }else{
+////                m_nLandomBanneridx = fm_nLandomBanneridx;
+////                break;
+////            }
+//        }while true
         uiBannerIMg.image = m_tGifBanner[m_nLandomBanneridx]
         uiSlideLabel.text = m_sStrSlider;
         //uiSlideLabel.lineBreakMode = .byWordWrapping
