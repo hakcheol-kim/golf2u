@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="newsroomheaderidx" id="U6b-Vx-4bR" customClass="NewsRoomHeader" customModule="random2u" customModuleProvider="target">
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="newsroomheaderidx" id="U6b-Vx-4bR" customClass="NewsRoomHeader" customModule="golf2u" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="375" height="227.5"/>
             <autoresizingMask key="autoresizingMask"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Community_newsroom_01.gif" translatesAutoresizingMaskIntoConstraints="NO" id="jRz-hL-Iik">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Community_newsroom_04.gif" translatesAutoresizingMaskIntoConstraints="NO" id="jRz-hL-Iik">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="187.5"/>
                     <color key="backgroundColor" red="0.0088338861240000004" green="0.48366796969999998" blue="0.76730656620000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </imageView>
@@ -39,21 +39,31 @@
                         <constraint firstAttribute="height" constant="40" id="p4T-NA-vPF"/>
                     </constraints>
                 </view>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="648-tp-8wg">
-                    <rect key="frame" x="252" y="50" width="46" height="46"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="648-tp-8wg">
+                    <rect key="frame" x="250" y="56" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="648-tp-8wg" secondAttribute="height" multiplier="1:1" id="J2r-pE-XBt"/>
+                        <constraint firstAttribute="width" constant="40" id="ixQ-Ty-4VB"/>
+                    </constraints>
                 </imageView>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WND-XJ-bvB">
-                    <rect key="frame" x="166" y="36" width="65" height="65"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WND-XJ-bvB">
+                    <rect key="frame" x="159.5" y="44.5" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="WND-XJ-bvB" secondAttribute="height" multiplier="1:1" id="r86-Jr-2eh"/>
+                        <constraint firstAttribute="width" constant="50" id="yEd-ib-1ag"/>
+                    </constraints>
                 </imageView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="xcI-nc-QXF" firstAttribute="top" secondItem="jRz-hL-Iik" secondAttribute="bottom" id="1HI-C9-d9d"/>
+                <constraint firstItem="648-tp-8wg" firstAttribute="centerX" secondItem="VXr-Tz-HHm" secondAttribute="centerX" multiplier="1.44" id="1Wj-fm-33x"/>
+                <constraint firstItem="WND-XJ-bvB" firstAttribute="centerY" secondItem="VXr-Tz-HHm" secondAttribute="centerY" multiplier="0.61" id="2W2-B9-sqC"/>
                 <constraint firstItem="xcI-nc-QXF" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" id="HSF-4Y-A9g"/>
+                <constraint firstItem="648-tp-8wg" firstAttribute="centerY" secondItem="VXr-Tz-HHm" secondAttribute="centerY" multiplier="0.67" id="Kdx-1E-vcC"/>
                 <constraint firstItem="xcI-nc-QXF" firstAttribute="bottom" secondItem="VXr-Tz-HHm" secondAttribute="bottom" id="Ojv-5n-Scg"/>
+                <constraint firstItem="WND-XJ-bvB" firstAttribute="centerX" secondItem="VXr-Tz-HHm" secondAttribute="centerX" multiplier="0.985" id="Pm3-SP-3dp"/>
                 <constraint firstItem="jRz-hL-Iik" firstAttribute="top" secondItem="VXr-Tz-HHm" secondAttribute="top" id="V24-vr-DSY"/>
                 <constraint firstItem="jRz-hL-Iik" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" id="bj4-I3-BPl"/>
                 <constraint firstItem="jRz-hL-Iik" firstAttribute="trailing" secondItem="VXr-Tz-HHm" secondAttribute="trailing" id="brf-Fp-lT6"/>
@@ -75,6 +85,6 @@
         </designable>
     </designables>
     <resources>
-        <image name="Community_newsroom_01.gif" width="720" height="360"/>
+        <image name="Community_newsroom_04.gif" width="375" height="190"/>
     </resources>
 </document>
